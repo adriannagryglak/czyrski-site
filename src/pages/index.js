@@ -1,5 +1,10 @@
-import * as React from "react"
+import * as React from "react";
+import '../styles/style.scss';
 
-export default function Home() {
-  return <div>Hello world!</div>
+export default function Start() {
+  return <div>Hello world!
+    <p>
+      Landing Page
+    </p>
+  </div>
 }
