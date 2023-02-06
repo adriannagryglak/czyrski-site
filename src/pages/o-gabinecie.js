@@ -1,7 +1,13 @@
 import React from 'react'
+import NavBar from '../components/Navbar';
+import Topper from '../components/Topper';
 
 export default function About() {
   return (
-    <div>o Gabinecie</div>
+    <div>
+      <Topper/>
+      <NavBar/>
+      o Gabinecie
+    </div>
   )
 }

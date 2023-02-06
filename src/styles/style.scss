@@ -1,1 +1,6 @@
-@forward 'globals';
+@import './global';
+@import './components/logo';
+@import './components/topper';
+@import './components/navbar';
+@import './components/footer';
+@import './components/hero';

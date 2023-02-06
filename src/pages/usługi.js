@@ -1,7 +1,13 @@
 import React from 'react'
+import NavBar from '../components/Navbar'
+import Topper from '../components/Topper'
 
 export default function Offer() {
   return (
-    <div>Uslugi</div>
+    <div>
+      <Topper/>
+      <NavBar/>
+      Uslugi
+    </div>
   )
 }

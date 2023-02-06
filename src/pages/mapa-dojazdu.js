@@ -1,7 +1,13 @@
 import React from 'react'
+import NavBar from '../components/Navbar';
+import Topper from '../components/Topper';
 
 export default function Map() {
   return (
-    <div>mapa-dojazdu</div>
+    <div>
+      <Topper/>
+      <NavBar/>
+      mapa-dojazdu
+    </div>
   )
 }

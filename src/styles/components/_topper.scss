@@ -1,0 +1,41 @@
+.topper {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+
+  .topper-container-right {
+    display: flex;
+  }
+
+  .topper-container {
+    display: flex;
+
+    .topper__icon {
+      align-self: center;
+      margin-right: 8px;
+      color: $primary-blue;
+    }
+  }
+
+  .topper__phone {
+    margin-right: 20px;
+
+    @media (min-width: 1090px) {
+      margin-right: 57px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 350px) and (max-width: 390px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
+}
