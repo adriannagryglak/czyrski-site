@@ -5,7 +5,6 @@ import { Carousel } from 'react-responsive-carousel';
 import Navbar from "./Navbar";
 
 export default function Hero() {
-
     // PREPARE FOR OPTIMAL VIDEO AUTOPLAY AND MOBILE 
     
   return (
@@ -22,27 +21,41 @@ export default function Hero() {
                 <div>
                     <StaticImage
                     src="../images/hero.png"
+                    //height="100vh"
                     alt="zdjecie w tle"
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
+                    
+                    
                     />
                     <div className='custom-container'>
                         <div className='slider-sticker'>
                             <p>Wizyta profilaktyczna 2x w roku
                                 <br/><span>może ochronić przed 97% chorób zębów</span>
                             </p>
-                            <a href="#">stomatologia zachowawcza</a>
+                            <a href="/uslugi/stomatologia-zachowawcza">stomatologia zachowawcza</a>
                         </div>    
                     </div> 
                 </div>
                 <div>
                     <StaticImage 
                     src="../images/hero.png"
-                    alt="zdjecie w tle"
+                    alt="video w tle"
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
+        
+                    />
+                </div>
+                <div>
+                    <StaticImage 
+                    src="../images/hero.png"
+                    alt="vedo w tle"
+                    quality="100"
+                    placeholder="blurred"
+                    className='d-block w-100'
+                  
                     />
                 </div>
             </Carousel>

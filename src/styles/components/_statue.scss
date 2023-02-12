@@ -1,0 +1,29 @@
+.statue{
+    background-color: $primary-blue;
+    color: white;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+    .statue__btn{
+        padding: 15px 32px;
+        width: 200px;
+        background-color: white;
+        color: $primary-blue;
+        border-radius: 6px;
+        border:none;
+        cursor: pointer;
+    }
+
+    @media (min-width: 956px){
+        flex-direction: row;
+        gap: 0;
+        text-align: left;
+        
+    }
+}

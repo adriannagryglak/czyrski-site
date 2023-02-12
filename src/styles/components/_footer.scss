@@ -16,27 +16,43 @@
       flex-wrap: wrap;
       gap: 10px;
 
-      @media (min-width: 1200px) {
-        gap: 50px;
+      @media (min-width: 580px) {
+        gap: 0;
+        justify-content: space-between;
       }
 
+      @media (min-width: 1150px) {
+        gap: 50px;
+      }
+      @media (min-width: 1400px) {
+        gap: 100px;
+      }
       @media (min-width: 1774px) {
         gap: 150px;
       }
 
       .footer-nav {
         display: flex;
-        gap: 68px;
+
+
+        @media (min-width: 956px) {
+          gap: 68px;
+        }
 
         .footer-nav-container {
           display: flex;
           flex-direction: column;
+          width: 50%;
 
           .footer-nav__link {
             font-family: $font-secondary;
             color: $text-dark;
             margin-bottom: 7px;
             white-space: nowrap;
+
+            &.active{
+              color: $primary-blue;
+            }
           }
         }
       }
@@ -76,14 +92,16 @@
       margin-bottom: 30px;
       flex-basis: 100%;
 
-      @media (max-width: 593px) {
+      @media (max-width: 956px) {
         text-align: center;
 
         .footer-nav-container:first-child {
           text-align: right;
+          padding-right: 10px;
         }
         .footer-nav-container:nth-child(2) {
           text-align: left;
+          padding-left: 10px;
         }
       }
     }

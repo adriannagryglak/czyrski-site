@@ -1,0 +1,85 @@
+.approach-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-blue-light;
+
+  @media (min-width: 956px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .approach-item {
+      flex-basis: 50%;
+    }
+
+    .approach__text-r {
+      padding-top: 44px;
+      padding-bottom: 44px;
+      padding-left: 59px;
+    }
+
+    .approach__text-l {
+      padding-top: 44px;
+      padding-bottom: 44px;
+      padding-right: 59px;
+    }
+  }
+
+  .approach__photo {
+    //border: 1px solid red;
+    position: relative;
+  }
+
+  .approach-title__welcome {
+    margin: 23px 0;
+    color: black;
+  }
+
+  .approach__text-r {
+    padding-right: 20px;
+    padding-left: 20px;
+    @media (min-width: $breakpoint-tablet) {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+
+    @media (min-width: $breakpoint-s-screen) {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+
+    @media (min-width: $breakpoint-l-screen) {
+      padding-right: 160px;
+      //padding-left: 160px;
+    }
+
+    @media (min-width: $breakpoint-xl-screen) {
+      padding-right: 380px;
+      //padding-left: 380px;
+    }
+  }
+
+  .approach__text-l {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+
+    @media (min-width: $breakpoint-s-screen) {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+
+    @media (min-width: $breakpoint-l-screen) {
+      //padding-right: 160px;
+      padding-left: 160px;
+    }
+
+    @media (min-width: $breakpoint-xl-screen) {
+      //padding-right: 380px;
+      padding-left: 380px;
+    }
+  }
+}

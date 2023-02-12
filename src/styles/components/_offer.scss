@@ -1,0 +1,35 @@
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+  padding-bottom: 14px;
+  gap: 37px;
+  justify-content: center;
+
+  .offer-title__welcome {
+    color: black;
+    margin-top: 37px;
+    margin-bottom: 20px;
+  }
+
+  .offer-link {
+    padding: 15px 32px;
+    width: 200px;
+    font-family: $font-secondary;
+    font-size: 18px;
+    border: 1px solid $primary-blue;
+    border-radius: 6px;
+    color: $primary-blue;
+    margin: 37px 0;
+    display: block;
+    text-align: center;
+  }
+  @media (min-width: 956px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .offer__text {
+      max-width: 483px;
+    }
+  }
+}
