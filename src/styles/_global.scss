@@ -5,9 +5,11 @@
 $primary-blue-light: #f5f8fa;
 $primary-blue: #396cf0;
 $secondary-blue: #1c58ef;
+$secondary-blue-light: #E2EAFF;
+
 $text-light: #646464;
 $text-dark: #1e2023;
-$light-grey: #E5E9EA;
+$light-grey: #e5e9ea;
 
 $font-primary: "Poppins";
 $font-secondary: "Roboto";
@@ -91,7 +93,11 @@ body {
     font-size: 38px;
     font-weight: 400;
     line-height: 44px;
-   
+    color: black;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 30px;
+    }
   }
 
   h5 {

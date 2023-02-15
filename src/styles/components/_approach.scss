@@ -1,20 +1,21 @@
 .approach-container {
   display: flex;
   flex-direction: column;
-  background-color: $primary-blue-light;
 
-  @media (min-width: 956px) {
+  @media (min-width: $breakpoint-l-screen) {
     flex-direction: row;
     flex-wrap: wrap;
 
     .approach-item {
       flex-basis: 50%;
+      max-width: 50%;
     }
 
     .approach__text-r {
       padding-top: 44px;
       padding-bottom: 44px;
       padding-left: 59px;
+      background-color: $primary-blue-light;
     }
 
     .approach__text-l {
@@ -24,8 +25,12 @@
     }
   }
 
+  .approach__sign {
+    margin-top: 59px;
+    width: fit-content;
+  }
+
   .approach__photo {
-    //border: 1px solid red;
     position: relative;
   }
 
@@ -34,9 +39,20 @@
     color: black;
   }
 
+  .approach__paragraph {
+    margin-bottom: 19px;
+  }
+
+  .approach__paragraph-blue {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: $font-secondary;
+    color: $primary-blue;
+  }
+
   .approach__text-r {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 50px 20px;
+
     @media (min-width: $breakpoint-tablet) {
       padding-right: 60px;
       padding-left: 60px;
@@ -44,23 +60,23 @@
 
     @media (min-width: $breakpoint-s-screen) {
       padding-right: 100px;
-      padding-left: 100px;
     }
 
     @media (min-width: $breakpoint-l-screen) {
       padding-right: 160px;
-      //padding-left: 160px;
     }
 
     @media (min-width: $breakpoint-xl-screen) {
       padding-right: 380px;
-      //padding-left: 380px;
     }
   }
 
   .approach__text-l {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
 
     @media (min-width: $breakpoint-tablet) {
       padding-right: 60px;
@@ -68,17 +84,15 @@
     }
 
     @media (min-width: $breakpoint-s-screen) {
-      padding-right: 100px;
       padding-left: 100px;
     }
 
     @media (min-width: $breakpoint-l-screen) {
-      //padding-right: 160px;
       padding-left: 160px;
+      order: 0;
     }
 
     @media (min-width: $breakpoint-xl-screen) {
-      //padding-right: 380px;
       padding-left: 380px;
     }
   }

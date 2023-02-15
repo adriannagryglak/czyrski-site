@@ -25,7 +25,7 @@
 
       &.active{
         color: $primary-blue;
-        //DO WE WANT THIS ?????
+        //DO WE WANT THIS ?
         pointer-events: none;
       }
 
@@ -52,11 +52,14 @@
       transform: translateY(100%) translateX(100%);
       display: flex;
       flex-direction: column;
-      min-width: 40vw;
+      min-width: 80vw;
       backdrop-filter: blur(10px);
       background-color: rgba(255,255,255, 0.6);
       transition: all 1s ease;
 
+      @media (min-width: $breakpoint-tablet){
+        min-width: 40vw;
+      }
       .navbar-link:hover{
         background-color: unset;
         padding: 15px 20px;
@@ -72,4 +75,10 @@
 
 .hero .navbar {
   position: absolute;
+
+  @media (max-width: 956px) {
+    position: relative;
+    background-color: $primary-blue-light;
+    
+  }
 }

@@ -15,18 +15,17 @@ export default function Hero() {
             showThumbs={false}
             showStatus={false}
             infiniteLoop={true}
-            // autoPlay={true}
+            //autoPlay={true}
             animationHandler="fade"
             >
-                <div>
+                <div className='carousel-item'>
                     <StaticImage
                     src="../images/hero.png"
-                    //height="100vh"
+                    style={{height: `100%`}}
                     alt="zdjecie w tle"
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
-                    
                     
                     />
                     <div className='custom-container'>
@@ -38,24 +37,25 @@ export default function Hero() {
                         </div>    
                     </div> 
                 </div>
-                <div>
+                <div className='carousel-item'>
                     <StaticImage 
                     src="../images/hero.png"
+                    style={{height: `100%`}}
                     alt="video w tle"
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
-        
+                    
                     />
                 </div>
-                <div>
+                <div className='carousel-item'>
                     <StaticImage 
                     src="../images/hero.png"
-                    alt="vedo w tle"
+                    alt="video w tle"
+                    style={{height: `100%`}}
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
-                  
                     />
                 </div>
             </Carousel>

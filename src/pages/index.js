@@ -8,6 +8,7 @@ import Approach from "../components/Approach";
 import Statue from "../components/Statue";
 import Offer from "../components/Offer";
 import Contact from "../components/Contact";
+import Services from "../components/Services";
 
 export default function Start() {
   return <>
@@ -15,6 +16,7 @@ export default function Start() {
     <Hero/>
     <Details/>
     <Approach/>
+    <Services />
     <Statue/>
     <Offer/>
     <Contact/>

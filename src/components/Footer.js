@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby' 
 import Logo from './Logo'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export default function Footer() {
   return (
@@ -18,12 +19,22 @@ export default function Footer() {
               <div className='footer-nav-container'>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/">Start</Link>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/o-gabinecie">O gabinecie</Link>
-                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/usługi">Usługi</Link>
+                <AnchorLink
+                  to="/#uslugi"
+                  title="Usługi"
+                  activeClassName="active" className="footer-nav__link"
+                  stripHash
+                />
               </div>
               <div className='footer-nav-container'>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/cennik">Cennik</Link>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/mapa-dojazdu">Mapka dojazdu</Link>
-                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/mapa-dojazdu">Kontakt</Link>
+                <AnchorLink
+                  to="/#kontakt"
+                  title="Kontakt"
+                  activeClassName="active" className="footer-nav__link"
+                  stripHash
+                />
               </div>
             </nav>
           </div>

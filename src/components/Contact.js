@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <section id="#contact" className='contact-container'>
+    <section id="kontakt" className='contact-container'>
         <div className='title-container custom-container'>
             <h2 className='contact__title'>Kontakt</h2>
             <p className='contact__paragraph'>Szanowni Państwo,  rejestrujemy telefonicznie  w godzinach pracy gabinetu. W pozostałych sprawach zapraszamy do kontaktu mailowego lub przy użyciu poniższego formularza </p>

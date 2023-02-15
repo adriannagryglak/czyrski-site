@@ -1,0 +1,17 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: $primary-blue;
+    color: white;
+
+    .header-title{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 42px;
+        
+    }
+
+  
+}

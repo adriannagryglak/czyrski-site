@@ -52,6 +52,7 @@
 
             &.active{
               color: $primary-blue;
+              pointer-events: none;
             }
           }
         }

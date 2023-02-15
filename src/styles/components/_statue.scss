@@ -10,6 +10,10 @@
     text-align: center;
     gap: 30px;
 
+    h2{
+        color: white;
+    }
+
     .statue__btn{
         padding: 15px 32px;
         width: 200px;
@@ -18,12 +22,20 @@
         border-radius: 6px;
         border:none;
         cursor: pointer;
+        display: block;
+        text-align: center;
     }
 
     @media (min-width: 956px){
         flex-direction: row;
         gap: 0;
         text-align: left;
+       
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        padding-top: 40px;
+        padding-bottom: 40px;
         
     }
 }
