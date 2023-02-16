@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
               <div className='footer-nav-container'>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/cennik">Cennik</Link>
-                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/mapa-dojazdu">Mapka dojazdu</Link>
+                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/mapka-dojazdu">Mapka dojazdu</Link>
                 <AnchorLink
                   to="/#kontakt"
                   title="Kontakt"

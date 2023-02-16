@@ -29,6 +29,12 @@
       width: 250px;
       display: block;
       margin: 0 auto;
+      transition: all 0.7s ease;
+
+      &:hover{
+        background-color: white;
+        color: $primary-blue;
+      }
     }
   }
 

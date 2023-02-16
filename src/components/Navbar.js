@@ -30,7 +30,7 @@ export default function NavBar() {
                   stripHash
                 />
                 <Link activeClassName="active" className="navbar-link" to="/cennik">Cennik</Link>
-                <Link activeClassName="active" className="navbar-link" to="/mapa-dojazdu">Mapka dojazdu</Link>
+                <Link activeClassName="active" className="navbar-link" to="/mapka-dojazdu">Mapka dojazdu</Link>
                 <AnchorLink
                   to="/#kontakt"
                   title="Kontakt"
@@ -49,7 +49,7 @@ export default function NavBar() {
                   stripHash
                 />
                 <Link activeClassName="active" className="navbar-link" to="/cennik">Cennik</Link>
-                <Link activeClassName="active" className="navbar-link" to="/mapa-dojazdu">Mapka dojazdu</Link>
+                <Link activeClassName="active" className="navbar-link" to="/mapka-dojazdu">Mapka dojazdu</Link>
                 <AnchorLink
                   to="/#kontakt"
                   title="Kontakt"

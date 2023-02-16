@@ -1,0 +1,46 @@
+.page-404 {
+  background-color: $primary-blue;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 150px;
+    margin-bottom: 48px;
+  }
+  h2 {
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  a {
+    padding: 15px 32px;
+    display: block;
+    background-color: white;
+    color: $primary-blue;
+    max-width: 267px;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+
+  @media (max-width: 690px) {
+    padding: 0 40px;
+    h1 {
+      font-size: 100px;
+    }
+    h2 {
+      font-size: 38px;
+    }
+  }
+}

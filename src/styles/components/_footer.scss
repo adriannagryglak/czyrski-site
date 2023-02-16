@@ -54,6 +54,10 @@
               color: $primary-blue;
               pointer-events: none;
             }
+
+            &:hover{
+              color: $primary-blue;
+            }
           }
         }
       }

@@ -16,12 +16,12 @@ export default function About() {
         <div className='about-item'>
           <div className='about-item__l'>
             <StaticImage
-                          src="../images/about/image1.png"
-                          alt="widok na gabinet z ulicy"
-                          quality="100"
-                          placeholder="blurred"
-                          className='d-block w-100'
-                          style={{height: `100%`}}
+                src="../images/about/image1.png"
+                alt="widok na gabinet z ulicy"
+                quality="100"
+                placeholder="blurred"
+                className='d-block w-100'
+                style={{height: `100%`, width: `100%`}}
               />
           </div>
           <div className='about-item__r light-blue'>
@@ -36,28 +36,26 @@ export default function About() {
           </div>
           <div className='about-item__r'>
             <StaticImage
-                          src="../images/about/image2.png"
-                          alt="absolwenci uczelni"
-                          quality="100"
-                          placeholder="blurred"
-                          className='d-block w-100'
-                          style={{height: `100%`}}
-                          
-              
+                  src="../images/about/image2.png"
+                  alt="absolwenci uczelni"
+                  quality="100"
+                  placeholder="blurred"
+                  className='d-block w-100'
+                  style={{height: `100%`, width: `100%`}}
               />
           </div>
         </div>
         <div className='about-item'>
           <div className='about-item__l blue'></div>
-          <div className='about-item__r'>
-            <p className='about-paragraph light-blue'>Drugi trend to powrót do postrzegania pacjenta jako całości. Tak jak to robili lekarze starożytni, z których wiedzy i dorobku korzystamy wbrew pozorom do dziś i tak jak jeszcze praktykowano niedawno z całkiem dobrym rezultatem przy uwzględnieniu ówczesnych możliwości technologicznych. Takie podejście zwane holistycznym uwzględnia różne aspekty funkcjonowania ludzkiego ciała uwzględniając zarówno czynniki biologiczne, biochemiczne jak i mechaniczne, których nieprawidłowości i zaburzenia wzajemnych relacji prowadzą do choroby. W podejściu holistycznym również dieta pacjenta a więc czynnik biochemiczny ma olbrzymie znaczenie. Zła dieta zawsze prowadzi do choroby ( a mogą to być schorzenia bardzo różne - w tym serca, nerek , przewodu pokarmowego , skóry , błon śluzowych etc.) i to twierdzenie już nie daje się obalić - jest na to zbyt wiele dowodów w piśmiennictwie. Współczesna "cywilizowana" dieta ma mało wspólnego z tym co człowiek powinien jeść i co może strawić przy użyciu swojego aparatu enzymatycznego. Jest natomiast bardzo wygodna dla przemysłu spożywczego i pośrednio dla farmaceutycznego.</p>
+          <div className='about-item__r light-blue'>
+            <p className='about-paragraph '>Drugi trend to powrót do postrzegania pacjenta jako całości. Tak jak to robili lekarze starożytni, z których wiedzy i dorobku korzystamy wbrew pozorom do dziś i tak jak jeszcze praktykowano niedawno z całkiem dobrym rezultatem przy uwzględnieniu ówczesnych możliwości technologicznych. Takie podejście zwane holistycznym uwzględnia różne aspekty funkcjonowania ludzkiego ciała uwzględniając zarówno czynniki biologiczne, biochemiczne jak i mechaniczne, których nieprawidłowości i zaburzenia wzajemnych relacji prowadzą do choroby. W podejściu holistycznym również dieta pacjenta a więc czynnik biochemiczny ma olbrzymie znaczenie. Zła dieta zawsze prowadzi do choroby ( a mogą to być schorzenia bardzo różne - w tym serca, nerek , przewodu pokarmowego , skóry , błon śluzowych etc.) i to twierdzenie już nie daje się obalić - jest na to zbyt wiele dowodów w piśmiennictwie. Współczesna "cywilizowana" dieta ma mało wspólnego z tym co człowiek powinien jeść i co może strawić przy użyciu swojego aparatu enzymatycznego. Jest natomiast bardzo wygodna dla przemysłu spożywczego i pośrednio dla farmaceutycznego.</p>
           </div>
         </div>
         <div className='about-item'>
           <div className='about-item__l'>
             <p className='about-paragraph'>W swojej praktyce często widzę u pacjentów objawy związane z nietolerancją pokarmową. Bardzo często schorzenia jamy ustnej manifestujące się na/w śluzówkach jamy ustnej oraz na języku i szerzej w stawach skroniowo-żuchwowych oraz wadzie zgryzu mają związek z dietą pacjenta. Posiadając wiedzę na ten temat muszę skorzystać z pomocy dietetyków klinicznych. Dietetyk kliniczny ma narzędzia i wiedzę aby móc diagnozować potrzeby żywieniowe pacjentów oraz eliminować te składniki diety, które ewidentnie szkodzą pacjentowi oraz wskazać, które produkty powinien lub musi spożywać. Słowem jest to wiedza umożliwiająca zaprogramowanie dobrego i smacznego odżywiania się . Dieta kliniczna nie oznacza przy tym wyrzeczeń i udręk na jakie skazują "cud-diety" na odchudzanie. Dietetyk kliniczny posługując się różnymi narzędziami - w tym badaniami laboratoryjnymi może doprowadzić do stanu, w którym istniejąca farmakoterapia pacjenta zostanie zredukowana do absolutnego minimum a nawet stanie sie zbędna. Zaś praca lekarza zostanie skutecznie wsparta a pacjent naprawdę poczuje sie lepiej a nie tylko wyleczony.
               <br/><br/>To jest właśnie moja propozycja – kompleksowe, wielodyscyplinarne podejście do leczenia stomatologicznego.
-              <span>Piotr Czyrski</span></p>
+              <br/><span>Piotr Czyrski</span></p>
           </div>
           <div className='about-item__r blue'>
             <StaticImage
@@ -66,7 +64,7 @@ export default function About() {
                           quality="100"
                           placeholder="blurred"
                           className='d-block w-100'
-              
+                          style={{height: `100%`}}
             />
           </div>
         </div>

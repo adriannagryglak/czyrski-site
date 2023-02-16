@@ -3,9 +3,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Navbar from "./Navbar";
+import { Link } from 'gatsby';
 
 export default function Hero() {
-    // PREPARE FOR OPTIMAL VIDEO AUTOPLAY AND MOBILE 
+    // PREPARE FOR OPTIMAL VIDEO AUTOPLAY
     
   return (
     <section className='hero'>
@@ -22,7 +23,6 @@ export default function Hero() {
                     <StaticImage
                     src="../images/hero.png"
                     style={{height: `100%`}}
-                    alt="zdjecie w tle"
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
@@ -33,7 +33,7 @@ export default function Hero() {
                             <p>Wizyta profilaktyczna 2x w roku
                                 <br/><span>może ochronić przed 97% chorób zębów</span>
                             </p>
-                            <a href="/uslugi/stomatologia-zachowawcza">stomatologia zachowawcza</a>
+                            <Link to="/usługi/stomatologia-zachowawcza">stomatologia zachowawcza</Link>
                         </div>    
                     </div> 
                 </div>
@@ -41,7 +41,6 @@ export default function Hero() {
                     <StaticImage 
                     src="../images/hero.png"
                     style={{height: `100%`}}
-                    alt="video w tle"
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
@@ -51,7 +50,6 @@ export default function Hero() {
                 <div className='carousel-item'>
                     <StaticImage 
                     src="../images/hero.png"
-                    alt="video w tle"
                     style={{height: `100%`}}
                     quality="100"
                     placeholder="blurred"

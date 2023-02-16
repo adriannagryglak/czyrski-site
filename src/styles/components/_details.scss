@@ -53,12 +53,19 @@
     padding: 15px 32px;
     border-radius: 6px;
     width: 100%;
+    border: 1px solid $primary-blue;
     display: block;
     font-family: $font-secondary;
     font-size: 18px;
     max-width: 238px;
     margin: 0 auto;
     text-align: center;
+    transition: all 0.7s ease;
+
+    &:hover{
+      color: $primary-blue;
+      background-color: white;
+    }
   }
 
   .details__phone {

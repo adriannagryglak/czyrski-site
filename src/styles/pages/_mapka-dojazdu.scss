@@ -1,0 +1,58 @@
+.map-container {
+  background-color: $primary-blue-light;
+  padding-bottom: 130px;
+
+  .map-form {
+    display: flex;
+    width: fit-content;
+    margin: -80px auto 0 auto;
+    box-shadow: 0px 0px 20px rgba(146, 156, 170, 0.3);
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
+
+    img {
+      margin: 0 auto 32px auto;
+    }
+
+    .map-form__l {
+      background-color: white;
+      padding: 64px 40px;
+      text-align: center;
+
+      h2 {
+        margin-bottom: 48px;
+      }
+    }
+
+    .map-form__r {
+      background-color: $primary-blue;
+      color: white;
+      padding: 64px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        font-family: $font-secondary;
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+        font-weight: 400;
+      }
+
+      .map-form-contact {
+        color: white;
+
+        li {
+          margin-bottom: 24px;
+          text-align: center;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-s-screen) {
+      flex-direction: column;
+    }
+  }
+}
