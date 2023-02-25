@@ -27,7 +27,7 @@ export default function NavBar() {
                   to="/#uslugi"
                   title="Usługi"
                   activeClassName="active" className="navbar-link"
-                  stripHash
+                  //stripHash
                 />
                 <Link activeClassName="active" className="navbar-link" to="/cennik">Cennik</Link>
                 <Link activeClassName="active" className="navbar-link" to="/mapka-dojazdu">Mapka dojazdu</Link>
@@ -35,7 +35,7 @@ export default function NavBar() {
                   to="/#kontakt"
                   title="Kontakt"
                   activeClassName="active" className="navbar-link"
-                  stripHash
+                  //stripHash
                 />
               </div>}
             </>
@@ -46,7 +46,7 @@ export default function NavBar() {
                   to="/#uslugi"
                   title="Usługi"
                   activeClassName="active" className="navbar-link"
-                  stripHash
+                  //stripHash
                 />
                 <Link activeClassName="active" className="navbar-link" to="/cennik">Cennik</Link>
                 <Link activeClassName="active" className="navbar-link" to="/mapka-dojazdu">Mapka dojazdu</Link>
@@ -54,7 +54,7 @@ export default function NavBar() {
                   to="/#kontakt"
                   title="Kontakt"
                   activeClassName="active" className="navbar-link"
-                  stripHash
+                  //stripHash
                 />
               </>}
             

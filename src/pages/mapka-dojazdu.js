@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer';
 import NavBar from '../components/Navbar';
 import Topper from '../components/Topper';
+import ContactForm from '../components/ContactForm';
 import PageHeader from '../components/PageHeader';
 import Map from '../components/Map';
 
@@ -13,12 +14,10 @@ export default function MapkaDojazdu() {
       <PageHeader location="Kontakt i mapka dojazdu"/>
       <section className='map-container'>
         <Map/>
-        <form className='map-form'>
-          <div className='map-form__l'>
-          <img src='/envelope-open.svg' alt='ikona koperty'/>
-            <h2>Formularz kontaktowy</h2>
-            {/* inputs + submit button */}
-          </div>
+        <div className='map-form'>
+          
+            <ContactForm className='map-form__l' isLanding={false}/>
+          
           <div className='map-form__r'>
             <div>
               <img src='/map-marker-alt.svg' alt='ikona pinezki'/>
@@ -30,7 +29,7 @@ export default function MapkaDojazdu() {
               <li><a href="mailto:kontakt@czyrski.pl">kontakt@czyrski.pl</a></li>
             </ul>
           </div>
-        </form>
+        </div>
       </section>
       <Footer/>
     </div>

@@ -1,6 +1,14 @@
 .hero {
   position: relative;
 
+  button {
+    z-index: 100;
+  }
+
+  .carousel-item{
+    height: 100%;
+  }
+
   .carousel .custom-container {
     position: absolute;
     width: 100%;
@@ -50,10 +58,10 @@
       cursor: pointer;
       z-index: 1000;
       position: relative;
-      border: 1px solid rgba(57, 108, 240, 0.9);;
+      border: 1px solid rgba(57, 108, 240, 0.9);
       transition: all 0.7s ease;
 
-      &:hover{
+      &:hover {
         border: 1px solid white;
         background-color: rgba(57, 108, 240, 0.9);
         color: white;

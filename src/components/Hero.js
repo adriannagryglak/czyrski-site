@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import { Link } from 'gatsby';
 
 export default function Hero() {
+    
     // PREPARE FOR OPTIMAL VIDEO AUTOPLAY
     
   return (
@@ -17,7 +18,11 @@ export default function Hero() {
             showStatus={false}
             infiniteLoop={true}
             //autoPlay={true}
-            animationHandler="fade"
+            //animationHandler="fade"
+            swipeable={true}
+            verticalSwipe="natural"
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
             >
                 <div className='carousel-item'>
                     <StaticImage
@@ -26,7 +31,7 @@ export default function Hero() {
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
-                    
+                    alt=""
                     />
                     <div className='custom-container'>
                         <div className='slider-sticker'>
@@ -39,21 +44,22 @@ export default function Hero() {
                 </div>
                 <div className='carousel-item'>
                     <StaticImage 
-                    src="../images/hero.png"
-                    style={{height: `100%`}}
+                    src="../images/approach-2.png"
+                    style={{height: `100%`, width: `100%`}}
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
-                    
+                    alt=""
                     />
                 </div>
                 <div className='carousel-item'>
                     <StaticImage 
-                    src="../images/hero.png"
-                    style={{height: `100%`}}
+                    src="../images/offer.png"
+                    style={{height: `100%`, width: `100%`}}
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
+                    alt=""
                     />
                 </div>
             </Carousel>

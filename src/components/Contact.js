@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
 export default function Contact() {
   return (
@@ -8,11 +9,7 @@ export default function Contact() {
             <p className='contact__paragraph'>Szanowni Państwo,  rejestrujemy telefonicznie  w godzinach pracy gabinetu. W pozostałych sprawach zapraszamy do kontaktu mailowego lub przy użyciu poniższego formularza </p>
             <a className='contact__mail' href="mailto:kontakt@czyrski.pl">kontakt@czyrski.pl</a>
         </div>
-        <form className='contact-form'>
-            <img src='/tooth.svg' alt='logo w kształcie zęba'/>
-            Formularz kontaktowy will be here
-            {/* TO DO WHOLE FORM + VALIDATION + EMAIL SENDING */}
-        </form>
+        <ContactForm isLanding={true}/>
     </section>
   )
 }
