@@ -16,11 +16,10 @@ export default function Start() {
     <Hero/>
     <Details/>
     <Approach/>
-    <Services />
+    <Services/>
     <Statue/>
     <Offer/>
     <Contact/>
     <Footer/>
   </>
 }
- 

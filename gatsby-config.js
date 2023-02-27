@@ -20,7 +20,6 @@ module.exports = {
       },
     },
   ],
-
   siteMetadata: {
     title: "",
     description: "",

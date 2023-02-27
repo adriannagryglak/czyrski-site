@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { navigate } from "gatsby"
 
-export default function Services() {
+export default function Services(props) {
 
     function handleClick(href){
         navigate(`/usługi/${href}`);
