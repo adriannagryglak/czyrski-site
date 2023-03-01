@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby';
+import Seo from '../components/Seo';
 
 export default function notFound() {
   return (
     <section className='page-404'>
+      <Seo/>
       <div className='404-container'>
         <h1>404</h1>
         <h2>Podstrona nie istnieje</h2>

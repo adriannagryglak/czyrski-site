@@ -5,10 +5,12 @@ import Topper from '../components/Topper';
 import ContactForm from '../components/ContactForm';
 import PageHeader from '../components/PageHeader';
 import Map from '../components/Map';
+import Seo from '../components/Seo';
 
 export default function MapkaDojazdu() {
   return (
     <div>
+      <Seo />
       <Topper/>
       <NavBar/>
       <PageHeader location="Kontakt i mapka dojazdu"/>

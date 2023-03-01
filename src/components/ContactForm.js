@@ -6,13 +6,32 @@ import { useState } from 'react';
 export default function ContactForm({isLanding}) {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const onSubmit = async (values, actions) =>{
-    console.log('Form submitted', values);
-    //API call
-    await new Promise((resolve)=> setTimeout(resolve,2000));
-    actions.resetForm()
-    setIsSubmitted(true);
+
+    fetch("https://formsubmit.co/ajax/adrianna.juda@live.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        imię : values.name,
+        email: values.email,
+        telefon: values.tel ? values.tel : "nie podano",
+        wiadomość: values.message,
+    })
+})
+    .then(response => response.json())
+    .then(actions.resetForm())
+    .then(setIsSubmitted(true))
+    .catch(error => {
+      actions.resetForm()
+      setIsSubmitted(false);
+      setError(error);
+      });
+    
   }
 
   return (
@@ -26,7 +45,7 @@ export default function ContactForm({isLanding}) {
       validationSchema={basicSchema} 
       onSubmit={onSubmit}>
       {({errors, touched, isSubmitting })=>(
-        <Form className={isLanding ? 'contact-form landing' : 'contact-form'} >
+        <Form className={isLanding ? 'contact-form landing' : 'contact-form'} action="https://formsubmit.co/adrianna.juda@live.com" method="POST" >
         {isLanding ? <img src='/tooth.svg' alt='logo w kształcie zęba'/> : <img src='/envelope-open.svg' alt='ikona koperty'/> }
             <h3>Formularz kontaktowy</h3>
             <label htmlFor="name" className='hidden-accessible'>imię i nazwisko</label>
@@ -46,6 +65,7 @@ export default function ContactForm({isLanding}) {
             {errors.message && touched.message && <p className='error-paragraph'>{errors.message}</p>}
             <button disabled={isSubmitting} type="submit">wyślij wiadomość</button>
             {isSubmitted && <p className='submitted-paragraph'>Dziękujemy za wysłanie wiadomości!</p>}
+            {error && <p className='submitted-paragraph'>Przepraszamy, coś poszło nie tak. Spróbuj wysłać wiadomość jeszcze raz</p>}
         </Form>
       )} 
     </Formik> 

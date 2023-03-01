@@ -5,10 +5,12 @@ import Footer from '../components/Footer';
 import Statue from '../components/Statue';
 import PageHeader from '../components/PageHeader';
 import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/Seo';
 
 export default function About() {
   return (
     <div>
+      <Seo/>
       <Topper/>
       <NavBar/>
       <PageHeader location="O gabinecie"/>

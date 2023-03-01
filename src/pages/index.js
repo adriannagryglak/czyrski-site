@@ -9,9 +9,11 @@ import Statue from "../components/Statue";
 import Offer from "../components/Offer";
 import Contact from "../components/Contact";
 import Services from "../components/Services";
+import Seo from "../components/Seo";
 
 export default function Start() {
   return <>
+    <Seo/>
     <Topper/>
     <Hero/>
     <Details/>

@@ -73,7 +73,8 @@
   }
 }
 
-.hero .navbar {
+.hero .navbar,
+.service-page .navbar {
   position: absolute;
 
   @media (max-width: 956px) {

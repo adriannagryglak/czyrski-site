@@ -13,7 +13,7 @@ export default function Services() {
         <h4 className='services-title'>usługi</h4>
         <h2 className='services-title__welcome'>Zakres usług gabinetu</h2>
         <div className='services-container' >
-             <div className='services-item' onClick={()=>{handleClick('ból-głowy')}}>
+             <div className='services-item' onClick={()=>{handleClick('leczenie-bólu-głowy')}}>
                 <StaticImage
                             src="../images/services/bol-glowy.jpg"
                             alt="leczenie bólu głowy"
@@ -43,7 +43,7 @@ export default function Services() {
                 />
                 <h6>Stomatologia zachowawcza</h6>
             </div>
-            <div className='services-item' onClick={()=>{handleClick('Profilaktyka i wczesne leczenie')}}>
+            <div className='services-item' onClick={()=>{handleClick('profilaktyka-wczesne-leczenie')}}>
                 <StaticImage
                             src="../images/services/wczesne-leczenie.jpg"
                             alt="profilaktyka i wczesne leczenie"
@@ -53,7 +53,7 @@ export default function Services() {
                 />
                 <h6>Profilaktyka <br/>Wczesne leczenie</h6>
             </div>
-            <div className='services-item' onClick={()=>{handleClick('Parodontologia i higiena jamy ustnej')}}>
+            <div className='services-item' onClick={()=>{handleClick('parodontologia-higiena-jamy-ustnej')}}>
                 <StaticImage
                             src="../images/services/higiena.jpg"
                             alt="parodontologia i higiena jamy ustnej"
@@ -63,7 +63,7 @@ export default function Services() {
                 />
                 <h6>Parodontologia <br/>Higiena jamy ustnej</h6>
             </div>
-            <div className='services-item' onClick={()=>{handleClick('Wybielanie zębów')}}>
+            <div className='services-item' onClick={()=>{handleClick('wybielanie-zębów')}}>
                 <StaticImage
                             src="../images/services/wybielanie.jpg"
                             alt="wybielanie zębów"
@@ -73,7 +73,7 @@ export default function Services() {
                 />
                 <h6>Wybielanie zębów</h6>
             </div>
-            <div className='services-item'onClick={()=>{handleClick('Chirurgia stomatologiczna')}} >
+            <div className='services-item'onClick={()=>{handleClick('chirurgia-stomatologiczna')}} >
                 <StaticImage
                             src="../images/services/chirurgia.jpg"
                             alt="chirurgia stomatologiczna"
@@ -83,7 +83,7 @@ export default function Services() {
                 />
                 <h6>Chirurgia stomatologiczna</h6>
             </div>
-            <div className='services-item' onClick={()=>{handleClick('Protetyka')}}>
+            <div className='services-item' onClick={()=>{handleClick('protetyka')}}>
                 <StaticImage
                             src="../images/services/prototyka.jpg"
                             alt="protetyka"
