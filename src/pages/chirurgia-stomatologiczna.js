@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicePageLayout from '../../components/servicePageLayout';
+import ServicePageLayout from '../components/servicePageLayout';
 import { StaticImage } from 'gatsby-plugin-image'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
@@ -9,7 +9,7 @@ export default function ChirurgiaPage() {
   
   return (
     <ServicePageLayout>
-              <StaticImage src="../../images/services/chirurgia.jpg"
+              <StaticImage src="../images/services/chirurgia.jpg"
                               alt="chirurgia stomatologiczna"
                               quality="100"
                               placeholder="blurred"

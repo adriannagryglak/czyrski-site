@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicePageLayout from '../../components/servicePageLayout';
+import ServicePageLayout from '../components/servicePageLayout';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { StaticImage } from 'gatsby-plugin-image'
 import { useState } from 'react';
@@ -13,7 +13,7 @@ export default function ProtetykaPage() {
   
   return (
     <ServicePageLayout>
-                <StaticImage src="../../images/services/prototyka.jpg"
+                <StaticImage src="../images/services/prototyka.jpg"
                                 alt="protetyka"
                                 quality="100"
                                 placeholder="blurred"

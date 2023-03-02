@@ -1,5 +1,5 @@
 import React from "react";
-import ServicePageLayout from "../../components/servicePageLayout";
+import ServicePageLayout from "../components/servicePageLayout";
 import { StaticImage } from "gatsby-plugin-image";
 import { useState } from "react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -27,7 +27,7 @@ export default function ParodontologiaPage() {
   return (
     <ServicePageLayout>
       <StaticImage
-        src="../../images/services/higiena.jpg"
+        src="../images/services/higiena.jpg"
         alt="parodontologia"
         quality="100"
         placeholder="blurred"

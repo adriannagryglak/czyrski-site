@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicePageLayout from '../../components/servicePageLayout';
+import ServicePageLayout from '../components/servicePageLayout';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { StaticImage } from 'gatsby-plugin-image'
 import { useState } from 'react';
@@ -15,7 +15,7 @@ export default function ProfilaktykaPage() {
   
   return (
     <ServicePageLayout>
-              <StaticImage src="../../images/services/wczesne-leczenie.jpg"
+              <StaticImage src="../images/services/wczesne-leczenie.jpg"
                               alt="profilaktyka i wczesne leczenie"
                               quality="100"
                               placeholder="blurred"

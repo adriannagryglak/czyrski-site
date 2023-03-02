@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { navigate } from "gatsby"
 import { Link } from 'gatsby';
 
 export default function Services() {
@@ -11,7 +10,7 @@ export default function Services() {
         <h2 className='services-title__welcome'>Zakres usług gabinetu</h2>
         <div className='services-container' >
              <div className='services-item' >
-                <Link to="/usługi/leczenie-bólu-głowy">
+                <Link to="/leczenie-bolu-glowy">
                     <StaticImage
                                 src="../images/services/bol-glowy.jpg"
                                 alt="leczenie bólu głowy"
@@ -23,7 +22,7 @@ export default function Services() {
                 </Link>
             </div>
             <div className='services-item'>
-                <Link to="/usługi/ortodoncja">
+                <Link to="/ortodoncja">
                     <StaticImage
                                 src="../images/services/ortodoncja.jpg"
                                 alt="ortodoncja"
@@ -35,7 +34,7 @@ export default function Services() {
                 </Link>
             </div>
             <div className='services-item'>
-                <Link to="/usługi/stomatologia-zachowawcza">
+                <Link to="/stomatologia-zachowawcza">
                     <StaticImage
                                 src="../images/services/zachowawcza.jpg"
                                 alt="stomatologia zachowawcza"
@@ -47,7 +46,7 @@ export default function Services() {
                 </Link>
             </div>
             <div className='services-item'>
-                <Link to='/usługi/profilaktyka-wczesne-leczenie'>
+                <Link to='/profilaktyka-wczesne-leczenie'>
                     <StaticImage
                                 src="../images/services/wczesne-leczenie.jpg"
                                 alt="profilaktyka i wczesne leczenie"
@@ -59,7 +58,7 @@ export default function Services() {
                 </Link>
             </div>
             <div className='services-item'>
-                <Link to='/usługi/parodontologia-higiena-jamy-ustnej'>
+                <Link to='/parodontologia-higiena-jamy-ustnej'>
                     <StaticImage
                                 src="../images/services/higiena.jpg"
                                 alt="parodontologia i higiena jamy ustnej"
@@ -71,7 +70,7 @@ export default function Services() {
                 </Link>
             </div>
             <div className='services-item'>
-                <Link to='/usługi/wybielanie-zębów'>
+                <Link to='/wybielanie-zebow'>
                     <StaticImage
                                 src="../images/services/wybielanie.jpg"
                                 alt="wybielanie zębów"
@@ -83,7 +82,7 @@ export default function Services() {
                 </Link>
             </div>
             <div className='services-item'>
-                <Link to='/usługi/chirurgia-stomatologiczna'>
+                <Link to='/chirurgia-stomatologiczna'>
                     <StaticImage
                                 src="../images/services/chirurgia.jpg"
                                 alt="chirurgia stomatologiczna"
@@ -95,7 +94,7 @@ export default function Services() {
                 </Link> 
             </div>
             <div className='services-item'>
-                <Link to='/usługi/protetyka'>
+                <Link to='/protetyka'>
                     <StaticImage
                                 src="../images/services/prototyka.jpg"
                                 alt="protetyka"

@@ -1,5 +1,5 @@
 import React from "react";
-import ServicePageLayout from "../../components/servicePageLayout";
+import ServicePageLayout from "../components/servicePageLayout";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 import { useState } from "react";
@@ -14,7 +14,7 @@ export default function WybielaniePage() {
   return (
     <ServicePageLayout>
       <StaticImage
-        src="../../images/services/wybielanie.jpg"
+        src="../images/services/wybielanie.jpg"
         alt="wybielanie zębów"
         quality="100"
         placeholder="blurred"

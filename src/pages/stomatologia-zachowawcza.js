@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicePageLayout from '../../components/servicePageLayout';
+import ServicePageLayout from '../components/servicePageLayout';
 import { StaticImage } from 'gatsby-plugin-image'
 import { useState } from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
@@ -21,7 +21,7 @@ export default function StomatologiaPage() {
   
   return (
     <ServicePageLayout>
-                  <StaticImage src="../../images/services/zachowawcza.jpg"
+                  <StaticImage src="../images/services/zachowawcza.jpg"
                                 alt="leczenie bólu głowy"
                                 quality="100"
                                 placeholder="blurred"

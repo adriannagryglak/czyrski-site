@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicePageLayout from '../../components/servicePageLayout';
+import ServicePageLayout from '../components/servicePageLayout';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -8,7 +8,7 @@ export default function OrtodoncjaPage() {
   const content = `Leczenie ortodontyczne obejmuje obowiązkowe rozpoznanie wady przy użyciu telerentgenogramu i cefalometrii oraz następowe leczenie przy użyciu aparatów ruchomych i stałych dostosowanych do konkretnego przypadku. Leczenie ortodontyczne to nie tylko "prostowanie" zębów ale również korekta kostnych problemów czaszkowych czyli wzajemnej relacji szczęki i żuchwy w tzw. teatrze czynnościowym co wiąże się również z korektą dysfunkcji stawów skroniowo-żuchwowych bardzo często współwystępującej w przypadku wad zgryzowych. Zgodnie z nowoczesnymi trendami stosowane jest czynnościowe leczenie bezekstrakcyjne czyli bez usuwania zębów za wyjątkiem wybranych przypadków III klasy.`;
 
   return(<ServicePageLayout>
-            <StaticImage src="../../images/services/ortodoncja.jpg"
+            <StaticImage src="../images/services/ortodoncja.jpg"
                               alt="aparat ortodontyczny"
                               quality="100"
                               placeholder="blurred"
