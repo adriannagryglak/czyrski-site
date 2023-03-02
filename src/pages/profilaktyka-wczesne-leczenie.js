@@ -2,11 +2,8 @@ import React from 'react'
 import ServicePageLayout from '../components/servicePageLayout';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { StaticImage } from 'gatsby-plugin-image'
-import { useState } from 'react';
 
 export default function ProfilaktykaPage() {
-
-  const [readMoreOn, setReadMoreOn]= useState(true);
 
   const content= ` Profilaktyka w stomatologii to zespół działań zapobiegających powstaniu procesu chorobowego w obrębie układu stomatognatycznego.
   Najbardziej oczywiste dla każdego jest tutaj zwalczanie próchnicy, bo z tym prawie każdy spotyka się na co dzień, natomiast nie każdy ma świadomość co do możliwości powstania innych schorzeń lub nie ma świadomości ich istnienia. Profilaktyka to regularne wizyty w gabinecie stomatologicznym i wykonanie badania narządu żucia czyli popularnie zbadania zębów. Umożliwia to wykrycie zmian chorobowych i ich wczesne leczenie co na ogół długoterminowo w obecnych czasach przynosi dobre efekty. Profilaktyka to nie tylko działania w obrębie gabinetu stomatologicznego - to także własne działania pacjenta jak regularna higiena jamy ustnej, unikanie słodyczy, właściwe odżywianie.
@@ -31,10 +28,10 @@ export default function ProfilaktykaPage() {
               />
                 <h4 className='service-title'>USŁUGI</h4>
                 <h2>Profilaktyka, wczesne leczenie</h2>
-                <p className={readMoreOn ? 'service-paragraph shorter' : 'service paragraph'}>
+                <p className='service paragraph'>
                   {content}
                 </p>
-                <a className="service-pragraph__link" onClick={()=>{setReadMoreOn(!readMoreOn)}}>{readMoreOn ? " czytaj dalej" : " zwiń tekst"}</a>
+               
                 <AnchorLink
                 to="/#kontakt"
                 title="Kontakt"

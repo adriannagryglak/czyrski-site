@@ -35,12 +35,11 @@
     }
 
     .service-paragraph {
-      //for safari to line clamp work
-      display: block;
+      //for safari for line clamp to work
+  
       &.shorter {
         overflow: hidden;
         text-overflow: ellipsis;
-        display: -webkit-box;
         -webkit-line-clamp: 12;
         line-clamp: 12;
         -webkit-box-orient: vertical;
