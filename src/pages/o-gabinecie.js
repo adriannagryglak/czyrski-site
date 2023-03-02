@@ -48,7 +48,7 @@ export default function About() {
           </div>
         </div>
         <div className='about-item'>
-          <div className='about-item__l blue'>
+          <div className='about-item__l'>
           <StaticImage
                   src="../images/about/asystentka.jpg"
                   alt="uśmiechnięta asystenkta z modelem szczęki"
@@ -68,7 +68,7 @@ export default function About() {
               <br/><br/>To jest właśnie moja propozycja – kompleksowe, wielodyscyplinarne podejście do leczenia stomatologicznego.
               <br/><span>Piotr Czyrski</span></p>
           </div>
-          <div className='about-item__r blue'>
+          <div className='about-item__r'>
             <StaticImage
                           src="../images/about/doktor.jpg"
                           alt="Piotr Czyrski"
