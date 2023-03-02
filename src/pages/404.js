@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby';
 import Seo from '../components/Seo';
 
-export default function notFound() {
+export default function NotFoundPage() {
   return (
     <section className='page-404'>
       <Seo/>

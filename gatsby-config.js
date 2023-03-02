@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: "Piotr Czyrski dr n. med. lekarz stomatolog",
     description: "Gabinet stomatologiczny, prowadzony od 1986 roku oferujący kompleksowe, wielodyscyplinarne podejście do leczenia stomatologicznego.", 
-    //change to production url !!!
+    //change to production url
     siteUrl: 'https://www.beta.czyrski.pl',
     keywords: 'dentysta,stomatolog,Wołów,gabinet,stomatologiczny,stomatologia,czyrski,leczenie,ortodoncja,protetyka',
     image: 'static/logo.png'
@@ -27,6 +27,8 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
+        //helped with error in building
+        //ignore: [`**/\.*`],
       },
     },
     {
