@@ -9,10 +9,18 @@ export default function OrtodoncjaPage() {
 
   return(<ServicePageLayout>
             <StaticImage src="../images/services/ortodoncja.jpg"
+                            alt="aparat ortodontyczny"
+                            quality="100"
+                            placeholder="blurred"
+                            className='d-block w-100'
+                            style={{width: `100%`, maxHeight: `930px`}}
+        />
+      <div className='custom-container service-container'>
+            <StaticImage src="../images/services/ortodoncja.jpg"
                               alt="aparat ortodontyczny"
                               quality="100"
                               placeholder="blurred"
-                              className='d-block w-100'
+                              className='d-block w-100 services-img'
               />
                 <h4 className='service-title'>USŁUGI</h4>
                 <h2>Ortodoncja</h2>
@@ -25,7 +33,7 @@ export default function OrtodoncjaPage() {
                 activeClassName="active" className="service-link"
                 //stripHash
             />
-              
+              </div>
           </ServicePageLayout>
   )
 }

@@ -16,10 +16,18 @@ export default function ProfilaktykaPage() {
   return (
     <ServicePageLayout>
               <StaticImage src="../images/services/wczesne-leczenie.jpg"
+                            alt="wczesne leczenie"
+                            quality="100"
+                            placeholder="blurred"
+                            className='d-block w-100'
+                            style={{width: `100%`, maxHeight: `930px`}}
+        />
+      <div className='custom-container service-container'>
+              <StaticImage src="../images/services/wczesne-leczenie.jpg"
                               alt="profilaktyka i wczesne leczenie"
                               quality="100"
                               placeholder="blurred"
-                              className='d-block w-100'
+                              className='d-block w-100 services-img'
               />
                 <h4 className='service-title'>USŁUGI</h4>
                 <h2>Profilaktyka, wczesne leczenie</h2>
@@ -33,6 +41,7 @@ export default function ProfilaktykaPage() {
                 activeClassName="active" className="service-link"
                 //stripHash
             />
+            </div>
   </ServicePageLayout>
   )
 }

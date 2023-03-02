@@ -12,10 +12,18 @@ export default function LeczeniePage() {
   
   return(<ServicePageLayout>
             <StaticImage src="../images/services/bol-glowy.jpg"
+                            alt="ból głowy"
+                            quality="100"
+                            placeholder="blurred"
+                            className='d-block w-100'
+                            style={{width: `100%`, maxHeight: `930px`}}
+        />
+      <div className='custom-container service-container'>
+            <StaticImage src="../images/services/bol-glowy.jpg"
                               alt="leczenie bólu głowy"
                               quality="100"
                               placeholder="blurred"
-                              className='d-block w-100'
+                              className='d-block w-100 services-img'
               />
                 <h4 className='service-title'>USŁUGI</h4>
                 <h2>Leczenie bólu głowy</h2>
@@ -40,6 +48,7 @@ export default function LeczeniePage() {
                 activeClassName="active" className="service-link"
                 //stripHash
             />
+            </div>
           </ServicePageLayout>
   )
 }

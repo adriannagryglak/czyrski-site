@@ -9,11 +9,19 @@ export default function ChirurgiaPage() {
   
   return (
     <ServicePageLayout>
+        <StaticImage src="../images/services/chirurgia.jpg"
+                            alt="chirurgia stomatologiczna"
+                            quality="100"
+                            placeholder="blurred"
+                            className='d-block w-100'
+                            style={{width: `100%`, maxHeight: `930px`}}
+        />
+      <div className='custom-container service-container'>
               <StaticImage src="../images/services/chirurgia.jpg"
                               alt="chirurgia stomatologiczna"
                               quality="100"
                               placeholder="blurred"
-                              className='d-block w-100'
+                              className='d-block w-100 services-img'
               />
                 <h4 className='service-title'>USŁUGI</h4>
                 <h2>Chirurgia stomatologiczna</h2>
@@ -25,7 +33,9 @@ export default function ChirurgiaPage() {
                 title="Kontakt"
                 activeClassName="active" className="service-link"
                 //stripHash
+
             />
+            </div>
   </ServicePageLayout>
   )
 }
