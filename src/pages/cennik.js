@@ -4,6 +4,7 @@ import Topper from "../components/Topper";
 import Footer from "../components/Footer";
 import PageHeader from "../components/PageHeader";
 import Seo from "../components/Seo";
+import '../styles/style.scss';
 
 export default function Prices() {
   const data = [

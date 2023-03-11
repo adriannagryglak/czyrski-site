@@ -2,6 +2,7 @@ import React from 'react'
 import ServicePageLayout from '../components/servicePageLayout';
 import { StaticImage } from 'gatsby-plugin-image'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import '../styles/style.scss';
 
 export default function ChirurgiaPage() {
 

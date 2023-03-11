@@ -42,7 +42,7 @@ export default function Hero() {
                     </div> 
                 </div>
                 <div className='carousel-item'>
-                    <video loop={true} muted autoPlay={true}>
+                    <video loop={true} muted autoPlay={true} playsInline={true}>
                         <source src={video} type="video/mp4"/>
                     </video>
                     <div className='custom-container'>

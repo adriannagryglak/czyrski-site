@@ -6,6 +6,7 @@ import ContactForm from '../components/ContactForm';
 import PageHeader from '../components/PageHeader';
 import Map from '../components/Map';
 import Seo from '../components/Seo';
+import '../styles/style.scss';
 
 export default function MapkaDojazdu() {
   return (

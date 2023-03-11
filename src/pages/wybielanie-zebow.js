@@ -3,6 +3,7 @@ import ServicePageLayout from "../components/servicePageLayout";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 import { useState } from "react";
+import '../styles/style.scss';
 
 export default function WybielaniePage() {
   const [readMoreOn, setReadMoreOn] = useState(true);

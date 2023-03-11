@@ -35,8 +35,6 @@
     }
 
     .service-paragraph {
-      //for safari for line clamp to work
-  
       &.shorter {
         overflow: hidden;
         text-overflow: ellipsis;

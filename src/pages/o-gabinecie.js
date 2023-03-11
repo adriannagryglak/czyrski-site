@@ -6,6 +6,7 @@ import Statue from '../components/Statue';
 import PageHeader from '../components/PageHeader';
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo';
+import '../styles/style.scss';
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
         <div className='about-item'>
           <div className='about-item__l'>
             <StaticImage
-                src="../images/about/gabinet.jpg"
+                src="../images/about/gabinet1.jpg"
                 alt="doktor i asystentka w gabinecie"
                 quality="100"
                 placeholder="blurred"
@@ -38,7 +39,7 @@ export default function About() {
           </div>
           <div className='about-item__r'>
             <StaticImage
-                  src="../images/about/doktorat.jpg"
+                  src="../images/about/gabinet2.jpg"
                   alt="doktor jako absolwent uczelni"
                   quality="100"
                   placeholder="blurred"
@@ -50,7 +51,7 @@ export default function About() {
         <div className='about-item'>
           <div className='about-item__l'>
           <StaticImage
-                  src="../images/about/asystentka.jpg"
+                  src="../images/about/gabinet3.jpg"
                   alt="uśmiechnięta asystenkta z modelem szczęki"
                   quality="100"
                   placeholder="blurred"
@@ -70,7 +71,7 @@ export default function About() {
           </div>
           <div className='about-item__r'>
             <StaticImage
-                          src="../images/about/doktor.jpg"
+                          src="../images/about/gabinet4.jpg"
                           alt="Piotr Czyrski"
                           quality="100"
                           placeholder="blurred"

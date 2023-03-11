@@ -1,12 +1,10 @@
 import React from 'react'
 import ServicePageLayout from '../components/servicePageLayout';
 import { StaticImage } from 'gatsby-plugin-image'
-import { useState } from 'react';
+import '../styles/style.scss';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 export default function StomatologiaPage() {
-
-  const [readMoreOn, setReadMoreOn]= useState(true);
 
   const content =`Stomatologia zachowawcza z endodoncją – jest to dział stomatologii poświęcony profilaktyce próchnicy zębów oraz leczeniu już powstałych ubytków próchniczych.
   Bardzo obszerną część tej specjalności stanowi endodoncja, czyli dyscyplina specjalizująca się w leczeniu kanałowym zębów.
@@ -37,10 +35,9 @@ export default function StomatologiaPage() {
                   />
                   <h4 className='service-title'>USŁUGI</h4>
                   <h2>Stomatologia zachowawcza</h2>
-                  <p className={readMoreOn ? 'service-paragraph shorter' : 'service paragraph'}>
+                  <p className='service paragraph'>
                     {content}
                   </p>
-                <a className="service-pragraph__link" onClick={()=>{setReadMoreOn(!readMoreOn)}}>{readMoreOn ? " czytaj dalej" : " zwiń tekst"}</a>
                 <AnchorLink
                 to="/#kontakt"
                 title="Kontakt"

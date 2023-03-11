@@ -14,7 +14,7 @@
     .footer-details {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 16px;
 
       @media (min-width: 580px) {
         gap: 0;
@@ -34,7 +34,6 @@
       .footer-nav {
         display: flex;
 
-
         @media (min-width: 956px) {
           gap: 68px;
         }
@@ -50,12 +49,12 @@
             margin-bottom: 7px;
             white-space: nowrap;
 
-            &.active{
+            &.active {
               color: $primary-blue;
               pointer-events: none;
             }
 
-            &:hover{
+            &:hover {
               color: $primary-blue;
             }
           }
@@ -66,11 +65,7 @@
         padding-left: 16px;
 
         li {
-          margin-bottom: 6px;
-
-          &:nth-child(2) {
-            margin-bottom: 14px;
-          }
+          margin-bottom: 12px;
         }
       }
     }
@@ -101,11 +96,11 @@
         text-align: center;
 
         .footer-nav-container:first-child {
-          text-align: right;
+          text-align: left;
           padding-right: 10px;
         }
         .footer-nav-container:nth-child(2) {
-          text-align: left;
+          text-align: center;
           padding-left: 10px;
         }
       }
