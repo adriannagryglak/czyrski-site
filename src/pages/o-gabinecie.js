@@ -20,7 +20,7 @@ export default function About() {
           <div className='about-item__l'>
             <StaticImage
                 src="../images/about/gabinet1.jpg"
-                alt="doktor i asystentka w gabinecie"
+                alt="doktor Czyrski w gabinecie"
                 quality="100"
                 placeholder="blurred"
                 className='d-block w-100'
@@ -37,10 +37,10 @@ export default function About() {
           <div className='about-item__l'>
             <p className='about-paragraph'>Współcześnie zaczynają być widoczne wyraźnie dwa trendy w medycynie. Pierwszy, o dwudziestowiecznym rodowodzie polega na wyodrębnianiu coraz węższych specjalizacji medycznych, w których pacjent staje się przedmiotem leczenia, a lekarz zajmuje sie małym fragmentem osoby pacjenta ( w sensie fizycznym i mentalnym) nie dostrzegając i nie interesując się całą osobą pacjenta - często w ten sposób nie dostrzega związku przyczynowo- skutkowego między stanem pacjenta a jego chorobą zadowalając się leczeniem objawu. W ten sposób udaje się "zaleczyć" fragmenty ciała pacjenta ale całego pacjenta już nie. I to jest przekleństwo współczesnej medycyny. Nie mówimy tu o medycynie interwencyjnej stanów nagłych - na przykład po urazach czy wypadkach bo postęp w tej dziedzinie jest imponujący. Niestety, takie podejście rzadko prowadzi do rzeczywistego dobrostanu pacjenta. Najczęściej kończy się przymusem ciągłej farmakoterapii.</p>
           </div>
-          <div className='about-item__r'>
+          <div className='about-item__r light-blue'>
             <StaticImage
                   src="../images/about/gabinet2.jpg"
-                  alt="doktor jako absolwent uczelni"
+                  alt="doktor Czyrski jako absolwent uczelni"
                   quality="100"
                   placeholder="blurred"
                   className='d-block w-100'
@@ -52,7 +52,7 @@ export default function About() {
           <div className='about-item__l'>
           <StaticImage
                   src="../images/about/gabinet3.jpg"
-                  alt="uśmiechnięta asystenkta z modelem szczęki"
+                  alt="doktor Czyrski w gabinecie"
                   quality="100"
                   placeholder="blurred"
                   className='d-block w-100'

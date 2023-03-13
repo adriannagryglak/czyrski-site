@@ -23,9 +23,9 @@ export default function Footer() {
                   to="/#uslugi"
                   title="Usługi"
                   activeClassName="active" className="footer-nav__link"
-                  stripHash
+                  //stripHash
                 />
-                <a className="footer-nav__link" href={`/regulamin.pdf`} download={`regulamin`}>Regulamin</a>
+                <a className="footer-nav__link" href={`/regulamin.pdf`} download={`Regulamin obowiązujący w gabinecie stomatologicznym dr n med lek stom. Piotr Czyrski`}>Regulamin</a>
               </div>
               <div className='footer-nav-container'>
                 
@@ -35,9 +35,9 @@ export default function Footer() {
                   to="/#kontakt"
                   title="Kontakt"
                   activeClassName="active" className="footer-nav__link"
-                  stripHash
+                  //stripHash
                 />
-                                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/mapka-dojazdu">Mapka dojazdu</Link>
+                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/mapka-dojazdu">Mapka dojazdu</Link>
               </div>
             </nav>
           </div>
