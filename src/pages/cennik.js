@@ -218,7 +218,7 @@ export default function Prices() {
         },
         {
           title:
-            "Twin Block (zależnie od konstrukcji indywidualnej)/ALF/Homeoblock",
+            "Twin Block (zależnie od konstrukcji indywidualnej) /ALF /Homeoblock",
           price: "od 2000 zł/2000 zł/2400 zł",
         },
       ],
@@ -249,7 +249,11 @@ export default function Prices() {
             </div>
           );
         })}
+        <div className="prices-caption">
+          <p>Konto bankowe Santander 07 1090 2460 0000 0006 2201 0828 <br/>Cennik nie stanowi oferty handlowej w rozumieniu art. 66 K.C. i może ulegać zmianie.</p>
+        </div>
       </section>
+
       <Footer />
     </>
   );

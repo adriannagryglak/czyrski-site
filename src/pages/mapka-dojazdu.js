@@ -32,7 +32,7 @@ export default function MapkaDojazdu() {
                   </a>
               </li>
               <li><a href="tel:48-713-891-385">+48 71 389 13 85</a></li>
-              <li><a href="mailto:kontakt@czyrski.pl">kontakt@czyrski.pl</a></li>
+              <li><a href="mailto:piotr@czyrski.pl">piotr@czyrski.pl</a></li>
             </ul>
           </div>
         </div>

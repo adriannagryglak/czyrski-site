@@ -11,7 +11,7 @@ export default function ContactForm({isLanding}) {
 
   const onSubmit = async (values, actions) =>{
 
-    fetch("https://formsubmit.co/ajax/kontakt@czyrski.pl", {
+    fetch("https://formsubmit.co/ajax/piotr@czyrski.pl", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',

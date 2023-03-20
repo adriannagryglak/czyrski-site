@@ -23,7 +23,7 @@ export default function Topper() {
             </div>
             <div className='topper-container'>
                 <FontAwesomeIcon className="topper__icon" icon={faEnvelope} />
-                <p><a href="mailto:kontakt@czyrski.pl">kontakt@czyrski.pl</a></p>
+                <p><a href="mailto:piotr@czyrski.pl">piotr@czyrski.pl</a></p>
             </div>
         </div>
     </div>
