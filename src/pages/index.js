@@ -9,6 +9,7 @@ import Offer from "../components/Offer";
 import Contact from "../components/Contact";
 import Services from "../components/Services";
 import Seo from "../components/Seo";
+import News from "../components/News";
 
 export default function Start() {
   return <>
@@ -17,6 +18,7 @@ export default function Start() {
     <Hero/>
     <Details/>
     <Approach/>
+    <News />
     <Services />
     <Offer/>
     <Contact/>

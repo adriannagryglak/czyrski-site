@@ -46,7 +46,7 @@ export default function ContactForm({isLanding}) {
       validationSchema={basicSchema} 
       onSubmit={onSubmit}>
       {({errors, touched, isSubmitting})=>(
-        <Form className={isLanding ? 'contact-form landing' : 'contact-form'} action="https://formsubmit.co/adrianna.juda@live.com" method="POST" >
+        <Form className={isLanding ? 'contact-form landing' : 'contact-form'} action="https://formsubmit.co/piotr@czyrski.pl" method="POST" >
         {isLanding ? <img src='/tooth.svg' alt='logo w kształcie zęba'/> : <img src='/envelope-open.svg' alt='ikona koperty'/> }
             <h3>Formularz kontaktowy</h3>
             <label htmlFor="name" className='hidden-accessible'>imię i nazwisko</label>

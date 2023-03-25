@@ -11,13 +11,13 @@ export default function Footer() {
         <div className='footer-logo'>
           <Logo/>
         </div>
-
         <div className='footer-details'>
           <div>
             <h5>Nawigacja</h5>
             <nav className='footer-nav'>
               <div className='footer-nav-container'>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/">Start</Link>
+                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/aktualnosci">Aktualności</Link>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/o-gabinecie">O gabinecie</Link>
                 <AnchorLink
                   to="/#uslugi"
@@ -25,18 +25,16 @@ export default function Footer() {
                   activeClassName="active" className="footer-nav__link"
                   //stripHash
                 />
-                <a className="footer-nav__link" href={`/regulamin.pdf`} download={`Regulamin obowiązujący w gabinecie stomatologicznym dr n med lek stom. Piotr Czyrski`}>Regulamin</a>
-              </div>
+                </div>
               <div className='footer-nav-container'>
-                
-
-                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/cennik">Cennik</Link>
+              <a className="footer-nav__link" href={`/regulamin.pdf`} download={`Regulamin obowiązujący w gabinecie stomatologicznym dr n med lek stom. Piotr Czyrski`}>Regulamin</a>
                 <AnchorLink
                   to="/#kontakt"
                   title="Kontakt"
                   activeClassName="active" className="footer-nav__link"
                   //stripHash
                 />
+                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/cennik">Cennik</Link>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/mapka-dojazdu">Mapka dojazdu</Link>
               </div>
             </nav>

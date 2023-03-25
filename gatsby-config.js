@@ -23,6 +23,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "VINYL", // nazwa
+        fieldName: "vinyl", // nazwa z malych liter (nie pamietam po co to bylo ale korzysta się z tego pozniej
+        url: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clfi9qxfn0vd001un6f1zh0n6/master", // to api które bedzie trzeba przekopiowac z hygraph
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Piotr Czyrski gabinet stomatologiczny',

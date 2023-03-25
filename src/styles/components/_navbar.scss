@@ -17,7 +17,7 @@
     align-items: center;
 
     .navbar-link {
-      padding: 15px 20px;
+      padding: 15px; 
       color: black;
       font-family: $font-secondary;
       transition: all 0.7s ease;
@@ -25,7 +25,6 @@
 
       &.active{
         color: $primary-blue;
-        //DO WE WANT THIS ?
         pointer-events: none;
       }
 
@@ -36,12 +35,8 @@
         border-radius: 6px;
       }
 
-      @media (min-width: 1545px) and (max-width: 1620px) {
-        padding: 15px 10px;
-
-        &:hover {
-          padding: 15px 10px;
-        }
+      @media (min-width: $breakpoint-xl-screen) {
+        padding: 15px 20px;
       }
     }
 
