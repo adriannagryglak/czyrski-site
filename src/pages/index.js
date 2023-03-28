@@ -12,6 +12,9 @@ import Seo from "../components/Seo";
 import News from "../components/News";
 
 export default function Start() {
+
+
+
   return <>
     <Seo/>
     <Topper/>

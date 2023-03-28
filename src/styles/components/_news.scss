@@ -11,10 +11,14 @@
   }
 
   h2 {
+    margin: 20px 0;
+  }
+
+  .news-title{
     margin: 8px 0 59px 0;
   }
 
-  a {
+  .news-link {
     color: $primary-blue;
     display: block;
     width: fit-content;
@@ -35,8 +39,47 @@
     }
   }
 
-  .news__article {
+  .news-article {
     margin-bottom: 60px;
     color: white;
+
+    .news-article__date,
+    .news-article__title{
+      font-weight: normal;
+      font-family: $font-secondary;
+    }
+
+    .news-article__title{
+      font-size: 26px;
+      
+    }
+    .news-article__date{
+      margin-bottom: 20px;
+      font-size: 16px;
+      
+    }
+
+    .news-article__thumbnail{
+      margin: 20px 0;
+    }
+
+    .news-article__content{
+      p{
+        margin: 10px 0;
+      }
+      a{
+        color: white;
+        font-weight: bolder;
+      }
+
+      ol,ul{
+        width: fit-content;
+        margin: 16px auto;
+      }
+      
+      ul{
+        list-style: disc;
+      }
+    }
   }
 }
