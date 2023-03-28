@@ -8,7 +8,7 @@ export default function Details() {
             <div className='details-item'>
                 <h5 className='details__title'>Jak do nas trafić?</h5>
                 <p className='details__text'>Nasz gabinet znajduje się w centrum Wołowa, w pobliżu stacji PKP.</p>
-                <Link className='details__link' to="/mapka-dojazdu">mapa dojazdu</Link>
+                <Link className='details__link' to="/mapka-dojazdu">mapka dojazdu</Link>
                 
             </div>
             <div className='details-item'>

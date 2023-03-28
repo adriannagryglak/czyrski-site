@@ -4,10 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Navbar from "./Navbar";
 import { Link } from 'gatsby';
+import video from '../images/hero-video.mp4';
 
 export default function Hero() {
-    
-    // PREPARE FOR OPTIMAL VIDEO AUTOPLAY
     
   return (
     <section className='hero'>
@@ -38,29 +37,40 @@ export default function Hero() {
                             <p>Wizyta profilaktyczna 2x w roku
                                 <br/><span>może ochronić przed 97% chorób zębów</span>
                             </p>
-                            <Link to="/usługi/stomatologia-zachowawcza">stomatologia zachowawcza</Link>
+                            <Link to="/stomatologia-zachowawcza">stomatologia zachowawcza</Link>
                         </div>    
                     </div> 
                 </div>
                 <div className='carousel-item'>
-                    <StaticImage 
-                    src="../images/approach-2.png"
-                    style={{height: `100%`, width: `100%`}}
-                    quality="100"
-                    placeholder="blurred"
-                    className='d-block w-100'
-                    alt=""
-                    />
+                    <video loop={true} muted autoPlay={true} playsInline={true}>
+                        <source src={video} type="video/mp4"/>
+                    </video>
+                    <div className='custom-container'>
+                        <div className='slider-sticker'>
+                            <p>Około 92% bolów głowy
+                                <br/><span>wywołane może być wadami zgryzu</span>
+                            </p>
+                            <Link to="/leczenie-bolu-glowy">leczenie bólu głowy</Link>
+                        </div>    
+                    </div>
                 </div>
                 <div className='carousel-item'>
                     <StaticImage 
-                    src="../images/offer.png"
+                    src="../images/hero2.jpg"
                     style={{height: `100%`, width: `100%`}}
                     quality="100"
                     placeholder="blurred"
                     className='d-block w-100'
                     alt=""
                     />
+                    <div className='custom-container'>
+                        <div className='slider-sticker'>
+                            <p>Właściwie przeprowadzone leczenie
+                                <br/><span>ortodontyczne nie powinno boleć</span>
+                            </p>
+                            <Link to="/ortodoncja">ortodoncja</Link>
+                        </div>
+                    </div>
                 </div>
             </Carousel>
     </section>

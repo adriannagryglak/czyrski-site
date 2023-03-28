@@ -5,10 +5,13 @@ import Footer from '../components/Footer';
 import Statue from '../components/Statue';
 import PageHeader from '../components/PageHeader';
 import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/Seo';
+import '../styles/style.scss';
 
 export default function About() {
   return (
     <div>
+      <Seo/>
       <Topper/>
       <NavBar/>
       <PageHeader location="O gabinecie"/>
@@ -16,8 +19,8 @@ export default function About() {
         <div className='about-item'>
           <div className='about-item__l'>
             <StaticImage
-                src="../images/about/image1.png"
-                alt="widok na gabinet z ulicy"
+                src="../images/about/gabinet1.jpg"
+                alt="doktor Czyrski w gabinecie"
                 quality="100"
                 placeholder="blurred"
                 className='d-block w-100'
@@ -34,10 +37,10 @@ export default function About() {
           <div className='about-item__l'>
             <p className='about-paragraph'>Współcześnie zaczynają być widoczne wyraźnie dwa trendy w medycynie. Pierwszy, o dwudziestowiecznym rodowodzie polega na wyodrębnianiu coraz węższych specjalizacji medycznych, w których pacjent staje się przedmiotem leczenia, a lekarz zajmuje sie małym fragmentem osoby pacjenta ( w sensie fizycznym i mentalnym) nie dostrzegając i nie interesując się całą osobą pacjenta - często w ten sposób nie dostrzega związku przyczynowo- skutkowego między stanem pacjenta a jego chorobą zadowalając się leczeniem objawu. W ten sposób udaje się "zaleczyć" fragmenty ciała pacjenta ale całego pacjenta już nie. I to jest przekleństwo współczesnej medycyny. Nie mówimy tu o medycynie interwencyjnej stanów nagłych - na przykład po urazach czy wypadkach bo postęp w tej dziedzinie jest imponujący. Niestety, takie podejście rzadko prowadzi do rzeczywistego dobrostanu pacjenta. Najczęściej kończy się przymusem ciągłej farmakoterapii.</p>
           </div>
-          <div className='about-item__r'>
+          <div className='about-item__r light-blue'>
             <StaticImage
-                  src="../images/about/image2.png"
-                  alt="absolwenci uczelni"
+                  src="../images/about/gabinet2.jpg"
+                  alt="doktor Czyrski jako absolwent uczelni"
                   quality="100"
                   placeholder="blurred"
                   className='d-block w-100'
@@ -46,7 +49,16 @@ export default function About() {
           </div>
         </div>
         <div className='about-item'>
-          <div className='about-item__l blue'></div>
+          <div className='about-item__l'>
+          <StaticImage
+                  src="../images/about/gabinet3.jpg"
+                  alt="doktor Czyrski w gabinecie"
+                  quality="100"
+                  placeholder="blurred"
+                  className='d-block w-100'
+                  style={{height: `100%`, width: `100%`}}
+              />
+          </div>
           <div className='about-item__r light-blue'>
             <p className='about-paragraph '>Drugi trend to powrót do postrzegania pacjenta jako całości. Tak jak to robili lekarze starożytni, z których wiedzy i dorobku korzystamy wbrew pozorom do dziś i tak jak jeszcze praktykowano niedawno z całkiem dobrym rezultatem przy uwzględnieniu ówczesnych możliwości technologicznych. Takie podejście zwane holistycznym uwzględnia różne aspekty funkcjonowania ludzkiego ciała uwzględniając zarówno czynniki biologiczne, biochemiczne jak i mechaniczne, których nieprawidłowości i zaburzenia wzajemnych relacji prowadzą do choroby. W podejściu holistycznym również dieta pacjenta a więc czynnik biochemiczny ma olbrzymie znaczenie. Zła dieta zawsze prowadzi do choroby ( a mogą to być schorzenia bardzo różne - w tym serca, nerek , przewodu pokarmowego , skóry , błon śluzowych etc.) i to twierdzenie już nie daje się obalić - jest na to zbyt wiele dowodów w piśmiennictwie. Współczesna "cywilizowana" dieta ma mało wspólnego z tym co człowiek powinien jeść i co może strawić przy użyciu swojego aparatu enzymatycznego. Jest natomiast bardzo wygodna dla przemysłu spożywczego i pośrednio dla farmaceutycznego.</p>
           </div>
@@ -57,9 +69,9 @@ export default function About() {
               <br/><br/>To jest właśnie moja propozycja – kompleksowe, wielodyscyplinarne podejście do leczenia stomatologicznego.
               <br/><span>Piotr Czyrski</span></p>
           </div>
-          <div className='about-item__r blue'>
+          <div className='about-item__r'>
             <StaticImage
-                          src="../images/about/doctor.png"
+                          src="../images/about/gabinet4.jpg"
                           alt="Piotr Czyrski"
                           quality="100"
                           placeholder="blurred"

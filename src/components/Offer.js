@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 export default function Offer() {
   return (
@@ -9,7 +9,12 @@ export default function Offer() {
             <h4 className='offer-title'>w ofercie</h4>
             <h2 className='offer-title__welcome'>Zabiegi paradontologiczne przy użyciu aparatów ultradźwiękowych</h2>
             <p className='offer__paragraph'>Ultradźwiękowa alternatywa w leczeniu chorób przyzębia umożliwia oczyszczenie uzębienia z osadów kamienia nazębnego. Przy użyciu wyspecjalizowanych końcówek możemy oczyścić głęboko w kieszonkach dziąsłowych  i trudno dostępnych miejscach. Ten zabieg nie musi boleć.</p>
-            <Link className="offer-link" to="/kontakt">Kontakt</Link>
+            <AnchorLink
+                  to="/#kontakt"
+                  title="Kontakt"
+                  activeClassName="active" className="offer-link"
+                  //stripHash
+                />
         </div>
         <div className='offer-item offer__photo'>
             <StaticImage

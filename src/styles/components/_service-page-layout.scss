@@ -1,0 +1,105 @@
+.service-page {
+  width: 100%;
+
+  .service-container {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    min-height: 790px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-title {
+      margin: 0 0 8px 0;
+    }
+
+    h2 {
+      margin-bottom: 22px;
+    }
+
+    .gatsby-image-wrapper.services-img{
+      height: 550px;
+      max-width: 450px;
+      float: right;
+      margin: 0 0 90px 130px;
+
+      @media (max-width: 1200px) {
+        height: unset;
+        max-width: unset;
+        width: 100%;
+        margin: 60px 0 0 0;
+        order: 1;
+      }
+    }
+
+    .service-paragraph {
+      &.shorter {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 12;
+        line-clamp: 12;
+        -webkit-box-orient: vertical;
+      }
+    }
+    a {
+      color: $primary-blue;
+      display: block;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      padding: 8px 0;
+    }
+
+    ol {
+      margin-left: 20px;
+      padding: 8px 0;
+    }
+
+    .service-pragraph__link {
+      color: $primary-blue;
+      cursor: pointer;
+    }
+
+    .service-link {
+      padding: 15px 32px;
+      width: 200px;
+      font-family: $font-secondary;
+      font-size: 18px;
+      border: 1px solid $primary-blue;
+      border-radius: 6px;
+      color: $primary-blue;
+      margin: 37px 0;
+      display: block;
+      text-align: center;
+      transition: all 0.7s ease;
+
+      @media (max-width: $breakpoint-tablet) {
+        margin-bottom: 60px;
+      }
+
+      &:hover {
+        color: white;
+        background-color: $primary-blue;
+      }
+    }
+
+    @media (max-width: $breakpoint-l-screen) {
+      flex-direction: column;
+      //gap: 60px
+    }
+
+    @media (max-width: $breakpoint-s-screen) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      gap: 20px;
+    }
+  }
+}

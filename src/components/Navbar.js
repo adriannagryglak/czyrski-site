@@ -22,6 +22,7 @@ export default function NavBar() {
               <Hamburger label="otwórz menu" size={26} rounded toggled={isOpen} toggle={setOpen} direction="right" color="black"/>
               {<div className={isOpen ? 'navbar-hamburger open' : 'navbar-hamburger'}>
                 <Link activeClassName="active" className="navbar-link" to="/">Start</Link>
+                <Link activeClassName="active" className="navbar-link" to="/aktualnosci">Aktualności</Link>
                 <Link activeClassName="active" className="navbar-link" to="/o-gabinecie">O gabinecie</Link>
                 <AnchorLink
                   to="/#uslugi"
@@ -41,6 +42,7 @@ export default function NavBar() {
             </>
             : <>
                 <Link activeClassName="active" className="navbar-link" to="/">Start</Link>
+                <Link activeClassName="active" className="navbar-link" to="/aktualnosci">Aktualności</Link>
                 <Link activeClassName="active" className="navbar-link" to="/o-gabinecie">O gabinecie</Link>
                 <AnchorLink
                   to="/#uslugi"
