@@ -53,8 +53,8 @@ export default function NewsPage() {
       <Topper />
       <NavBar />
       <PageHeader location="Aktualności" />
+      {data.news.newposts.length === 0 ? <p>brak aktualności na stronie</p> : 
       <main className="news-content custom-container">
-
         {currentItems.map((news, i) => {
            const isoDateString = news.publishedAt;
            const formattedDate = moment(isoDateString).format("DD MMMM YYYY");
@@ -82,7 +82,7 @@ export default function NewsPage() {
                 activeClassName="active"
         />
 
-      </main>
+      </main>}
       <Footer />
     </>
   );
