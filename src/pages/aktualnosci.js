@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import "../styles/style.scss";
 import Topper from "../components/Topper";
 import PageHeader from "../components/PageHeader";
@@ -9,6 +8,10 @@ import { useStaticQuery, graphql } from "gatsby";
 import moment from 'moment';
 import 'moment/locale/pl';
 import { RichText } from '@graphcms/rich-text-react-renderer';
+import ReactPaginate from 'react-paginate';
+import { useEffect, useState } from 'react';
+import Seo from '../components/Seo';
+
 
 export default function NewsPage() {
   moment.locale('pl');
@@ -30,16 +33,31 @@ export default function NewsPage() {
     }
   `);
 
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 4;
+
+  const endOffset = itemOffset + itemsPerPage;
+
+  const currentItems = data.news.newposts.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(data.news.newposts.length / itemsPerPage);
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % data.news.newposts.length;
+    window.scrollTo(0,0)
+    setItemOffset(newOffset);
+  };
+
   return (
     <>
+      <Seo />
       <Topper />
       <NavBar />
       <PageHeader location="Aktualności" />
       <main className="news-content custom-container">
-        {data.news.newposts.map((news, i) => {
+
+        {currentItems.map((news, i) => {
            const isoDateString = news.publishedAt;
            const formattedDate = moment(isoDateString).format("DD MMMM YYYY");
-         
           return (
             <div key={i} className="news-item">
                 {news.heroImg && <img className="news-item__thumbnail" src={news.heroImg.url} alt="zdjęcie do artykułu"/> }
@@ -50,8 +68,20 @@ export default function NewsPage() {
                     <RichText content={news.content.raw} />
                 </div>
             </div>)
-          
         })}
+
+        <ReactPaginate
+                breakLabel="..."
+                nextLabel=">"
+                onPageChange={handlePageClick}
+                pageRangeDisplayed={5}
+                pageCount={pageCount}
+                previousLabel="<"
+                renderOnZeroPageCount={null}
+                className="pagination"
+                activeClassName="active"
+        />
+
       </main>
       <Footer />
     </>

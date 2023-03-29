@@ -73,4 +73,21 @@
       }
     }
   }
+
+  .pagination{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+
+    li{
+      cursor: pointer;
+      font-size: 18px;
+
+      &.active{
+        color: $primary-blue;
+        pointer-events: none;
+      }
+    }
+  }
 }
