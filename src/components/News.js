@@ -32,7 +32,7 @@ export default function News() {
     <section className='news custom-container'>
         <h4>bądź na bieżąco</h4>
         <h2 className="news-title">Aktualności gabinetu</h2>
-        {data.news.newposts.length === 0 ? <p>Przepraszamy, póki co nie mamy żadnych nowości. </p> :
+        {data.news.newposts.length === 0 ? <p className='news-empty'>Przepraszamy, na chwilę obecną nie posiadamy nowych ogłoszeń.</p> :
         <>
         <article className='news-article'>
             <h3 className='news-article__title'>{data.news.newposts[0].title}</h3>
