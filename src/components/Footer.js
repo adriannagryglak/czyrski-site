@@ -3,7 +3,8 @@ import { Link } from 'gatsby'
 import Logo from './Logo'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-export default function Footer() {
+export default function Footer({isNews}) {
+  
   return (
     <footer className='footer custom-container'>
       <div className='footer-container'>
@@ -17,7 +18,12 @@ export default function Footer() {
             <nav className='footer-nav'>
               <div className='footer-nav-container'>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/">Start</Link>
-                <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/aktualnosci">Aktualności</Link>
+                {isNews &&  <AnchorLink
+                  to="/#news"
+                  title="Aktualności"
+                  activeClassName="active" className="footer-nav__link"
+                  //stripHash
+                />}
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/o-gabinecie">O gabinecie</Link>
                 <AnchorLink
                   to="/#uslugi"

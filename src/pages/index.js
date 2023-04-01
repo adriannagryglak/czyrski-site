@@ -10,21 +10,38 @@ import Contact from "../components/Contact";
 import Services from "../components/Services";
 import Seo from "../components/Seo";
 import News from "../components/News";
+import { useStaticQuery, graphql } from "gatsby";
+import { useState } from "react";
 
 export default function Start() {
 
-
+  const data = useStaticQuery(graphql`
+  query {
+    news {
+      newposts(last: 1) {
+        content {
+          raw
+        }
+        title
+        publishedAt
+        heroImg{
+          url
+        }
+      }
+    }
+  }
+`);
 
   return <>
     <Seo/>
     <Topper/>
-    <Hero/>
+    <Hero isNews={data.news.newposts.length !== 0}/>
     <Details/>
     <Approach/>
-    <News />
+    {data.news.newposts.length !== 0 && <News data={data.news.newposts[0]}/>}
     <Services />
     <Offer/>
     <Contact/>
-    <Footer/>
+    <Footer isNews={data.news.newposts.length !== 0}/>
   </>
 }

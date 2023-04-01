@@ -6,11 +6,11 @@ import Navbar from "./Navbar";
 import { Link } from 'gatsby';
 import video from '../images/hero-video.mp4';
 
-export default function Hero() {
+export default function Hero({isNews}) {
     
   return (
     <section className='hero'>
-            <Navbar/>
+            <Navbar isNews={isNews}/>
             <Carousel
             showIndicators={false}
             showThumbs={false}
