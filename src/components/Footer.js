@@ -2,9 +2,27 @@ import React from 'react'
 import { Link } from 'gatsby' 
 import Logo from './Logo'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { useStaticQuery, graphql } from "gatsby";
 
-export default function Footer({isNews}) {
+export default function Footer() {
   
+  const data = useStaticQuery(graphql`
+  query {
+    news {
+      newposts(last: 1) {
+        content {
+          raw
+        }
+        title
+        publishedAt
+        heroImg{
+          url
+        }
+      }
+    }
+  }
+`);
+
   return (
     <footer className='footer custom-container'>
       <div className='footer-container'>
@@ -18,7 +36,7 @@ export default function Footer({isNews}) {
             <nav className='footer-nav'>
               <div className='footer-nav-container'>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/">Start</Link>
-                {isNews &&  <AnchorLink
+                {data.news.newposts.length !== 0 &&  <AnchorLink
                   to="/#news"
                   title="Aktualności"
                   activeClassName="active" className="footer-nav__link"

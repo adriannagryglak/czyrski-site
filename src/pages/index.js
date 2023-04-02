@@ -11,7 +11,6 @@ import Services from "../components/Services";
 import Seo from "../components/Seo";
 import News from "../components/News";
 import { useStaticQuery, graphql } from "gatsby";
-import { useState } from "react";
 
 export default function Start() {
 
