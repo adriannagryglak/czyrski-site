@@ -13,7 +13,7 @@ import News from "../components/News";
 import { useStaticQuery, graphql } from "gatsby";
 
 export default function Start() {
-
+  
   const data = useStaticQuery(graphql`
   query {
     news {

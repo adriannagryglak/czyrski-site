@@ -12,7 +12,7 @@ export default function News({data}) {
   const formattedDate = moment(isoDateString).format("DD MMMM YYYY");
 
   return (
-    <section className='news custom-container' id="news">
+    <section className='news custom-container' id="aktualnosci">
         <h4>bądź na bieżąco</h4>
         <h2 className="news-title">Aktualności gabinetu</h2>
         <article className='news-article'>

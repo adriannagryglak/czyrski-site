@@ -37,7 +37,7 @@ export default function Footer() {
               <div className='footer-nav-container'>
                 <Link activeClassName="active" partiallyActive={false} className="footer-nav__link" to="/">Start</Link>
                 {data.news.newposts.length !== 0 &&  <AnchorLink
-                  to="/#news"
+                  to="/#aktualnosci"
                   title="Aktualności"
                   activeClassName="active" className="footer-nav__link"
                   //stripHash

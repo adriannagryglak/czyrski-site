@@ -42,7 +42,7 @@ export default function NavBar() {
               {<div className={isOpen ? 'navbar-hamburger open' : 'navbar-hamburger'}>
                 <Link activeClassName="active" className="navbar-link" to="/">Start</Link>
                 {isNews && <AnchorLink
-                  to="/#news"
+                  to="/#aktualnosci"
                   title="Aktualności"
                   activeClassName="active" className="navbar-link"
                 />}
@@ -64,7 +64,7 @@ export default function NavBar() {
             : <>
                 <Link activeClassName="active" className="navbar-link" to="/">Start</Link>
                 {isNews && <AnchorLink
-                  to="/#news"
+                  to="/#aktualnosci"
                   title="Aktualności"
                   activeClassName="active" className="navbar-link"
                 />}
