@@ -3,9 +3,9 @@
  */
 
 
-const myCustomQueries = {
-  isHamburger: '(max-width: 1250px)',
-};
+// const myCustomQueries = {
+//   isHamburger: '(max-width: 1250px)',
+// };
 
 module.exports = {
   siteMetadata: {
@@ -21,12 +21,7 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-plugin-breakpoints",
-      options: {
-          queries: myCustomQueries,
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,6 +37,12 @@ module.exports = {
         url: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clfqk83pq03oz01up5z9247yu/master",
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-breakpoints",
+    //   options: {
+    //       queries: myCustomQueries,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

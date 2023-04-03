@@ -17,7 +17,7 @@ export default function Start() {
   const data = useStaticQuery(graphql`
   query {
     news {
-      newposts {
+      newposts(last: 1) {
         content {
           raw
         }

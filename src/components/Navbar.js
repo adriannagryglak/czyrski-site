@@ -5,17 +5,19 @@ import Hamburger from 'hamburger-react'
 import { useState } from 'react';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { useStaticQuery, graphql } from "gatsby";
-import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+//import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+import { useMediaQuery } from 'react-responsive';
 
 export default function NavBar() {
 
   const [isOpen, setOpen] = useState(false)
-  const breakpoints = useBreakpoint();
+  //const breakpoints = useBreakpoint();
+const isHamburger = useMediaQuery({query: '(max-width: 1250px)'});
 
   const data = useStaticQuery(graphql`
   query {
     news {
-      newposts{
+      newposts(last: 1) {
         content {
           raw
         }
@@ -31,7 +33,7 @@ export default function NavBar() {
     <nav className='navbar custom-container'>
           <Logo/>
           <div className='navbar-container'>
-            {breakpoints.isHamburger ? <>
+            {isHamburger ? <>
               <Hamburger label="otwórz menu" size={26} rounded toggled={isOpen} toggle={setOpen} direction="right" color="black"/>
               {<div className={isOpen ? 'navbar-hamburger open' : 'navbar-hamburger'}>
                 <Link activeClassName="active" className="navbar-link" to="/">Start</Link>
