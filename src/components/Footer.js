@@ -9,7 +9,7 @@ export default function Footer() {
   const data = useStaticQuery(graphql`
   query {
     news {
-      newposts(last: 1) {
+      newposts {
         content {
           raw
         }

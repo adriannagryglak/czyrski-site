@@ -15,7 +15,7 @@ export default function NavBar() {
   const data = useStaticQuery(graphql`
   query {
     news {
-      newposts(last: 1) {
+      newposts{
         content {
           raw
         }
