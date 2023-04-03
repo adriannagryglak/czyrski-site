@@ -5,19 +5,17 @@ import Hamburger from 'hamburger-react'
 import { useState } from 'react';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { useStaticQuery, graphql } from "gatsby";
-//import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import { useMediaQuery } from 'react-responsive';
 
 export default function NavBar() {
 
   const [isOpen, setOpen] = useState(false)
-  //const breakpoints = useBreakpoint();
 const isHamburger = useMediaQuery({query: '(max-width: 1250px)'});
 
   const data = useStaticQuery(graphql`
   query {
     news {
-      newposts(last: 1) {
+      newposts(orderBy: publishedAt_ASC, first: 1) {
         content {
           raw
         }

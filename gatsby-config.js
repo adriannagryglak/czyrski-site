@@ -2,11 +2,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
-
-// const myCustomQueries = {
-//   isHamburger: '(max-width: 1250px)',
-// };
-
 module.exports = {
   siteMetadata: {
     title: "Piotr Czyrski dr n. med. lekarz stomatolog",
@@ -37,12 +32,6 @@ module.exports = {
         url: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clfqk83pq03oz01up5z9247yu/master",
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-breakpoints",
-    //   options: {
-    //       queries: myCustomQueries,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
