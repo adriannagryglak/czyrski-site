@@ -1,6 +1,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+
+const myCustomQueries = {
+  isHamburger: '(max-width: 1250px)',
+};
+
 module.exports = {
   siteMetadata: {
     title: "Piotr Czyrski dr n. med. lekarz stomatolog",
@@ -15,6 +21,12 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+          queries: myCustomQueries,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
