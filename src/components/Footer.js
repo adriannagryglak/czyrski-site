@@ -15,9 +15,6 @@ export default function Footer() {
         }
         title
         publishedAt
-        heroImg{
-          url
-        }
       }
     }
   }
