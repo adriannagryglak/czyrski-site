@@ -15,7 +15,7 @@ const isHamburger = useMediaQuery({query: '(max-width: 1250px)'});
   const data = useStaticQuery(graphql`
   query {
     news {
-      newposts(orderBy: publishedAt_ASC, first: 1) {
+      newposts(orderBy: publishedAt_DESC, first: 1) {
         content {
           raw
         }
