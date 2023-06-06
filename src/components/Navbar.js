@@ -9,8 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 
 export default function NavBar() {
 
-  const [isOpen, setOpen] = useState(false)
-const isHamburger = useMediaQuery({query: '(max-width: 1250px)'});
+const [isOpen, setOpen] = useState(false)
 
   const data = useStaticQuery(graphql`
   query {
@@ -31,9 +30,9 @@ const isHamburger = useMediaQuery({query: '(max-width: 1250px)'});
     <nav className='navbar custom-container'>
           <Logo/>
           <div className='navbar-container'>
-            {isHamburger ? <>
+            <div className="mobile">
               <Hamburger label="otwórz menu" size={26} rounded toggled={isOpen} toggle={setOpen} direction="right" color="black"/>
-              {<div className={isOpen ? 'navbar-hamburger open' : 'navbar-hamburger'}>
+              <div className={isOpen ? 'navbar-hamburger open' : 'navbar-hamburger'}>
                 <Link activeClassName="active" className="navbar-link" to="/">Start</Link>
                 {isNews && <AnchorLink
                   to="/#aktualnosci"
@@ -53,9 +52,9 @@ const isHamburger = useMediaQuery({query: '(max-width: 1250px)'});
                   title="Kontakt"
                   activeClassName="active" className="navbar-link"
                 />
-              </div>}
-            </>
-            : <>
+              </div>
+            </div>
+            <div className="desktop">
                 <Link activeClassName="active" className="navbar-link" to="/">Start</Link>
                 {isNews && <AnchorLink
                   to="/#aktualnosci"
@@ -75,7 +74,7 @@ const isHamburger = useMediaQuery({query: '(max-width: 1250px)'});
                   title="Kontakt"
                   activeClassName="active" className="navbar-link"
                 />
-              </>}
+              </div>
             
         </div>
     </nav>

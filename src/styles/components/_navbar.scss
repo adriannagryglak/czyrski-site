@@ -16,6 +16,19 @@
     display: flex;
     align-items: center;
 
+    .mobile{
+      display: none;
+
+      @media (max-width: 1250px) {
+        display: block;
+      }
+    }
+
+    .desktop{
+      @media (max-width: 1250px) {
+              display: none;
+            }
+    }
     .navbar-link {
       padding: 15px; 
       color: black;
