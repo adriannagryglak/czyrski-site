@@ -128,6 +128,7 @@
 
     .exit{
         height: 40px;
+        cursor: pointer;
         width: 40px;
         z-index: 10000;
         position: absolute;
@@ -158,9 +159,9 @@
 
     .img-modal{
       position: absolute;
-      object-fit: contain;
-      width: 95%;
-      max-height: 95%;
+      object-fit: contain !important;
+      width: 85%;
+      max-height: 85%;
       
     }
 
