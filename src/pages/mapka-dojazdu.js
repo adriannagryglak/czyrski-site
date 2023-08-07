@@ -23,6 +23,7 @@ export default function MapkaDojazdu() {
               <StaticImage
                           src="../images/mapa.jpg"
                           quality="100"
+                          objectFit='contain'
                           placeholder="blurred"
                           className='map-modal'
                           alt="widok z lotu ptaka na Wołów, z oznaczeniem lokalizacji i kierunków"
