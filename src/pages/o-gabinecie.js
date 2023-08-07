@@ -7,8 +7,42 @@ import PageHeader from '../components/PageHeader';
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo';
 import '../styles/style.scss';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 export default function About() {
+  const [isModal, setIsModal] = React.useState(false); 
+
+  const galleryImages=[<StaticImage
+    src="../images/gallery/gallery-1.jpg"
+    quality="100"
+    placeholder="blurred"
+    alt=""
+    className='img-modal'
+    />, 
+    <StaticImage
+    src="../images/gallery/gallery-2.jpg"
+    quality="100"
+    placeholder="blurred"
+    alt=""
+    className='img-modal'
+    /> ,
+    <StaticImage
+    src="../images/gallery/gallery-3.jpg"
+    quality="100"
+    placeholder="blurred"
+    alt=""
+    className='img-modal'
+    /> ,
+    <StaticImage
+    src="../images/gallery/gallery-4.jpg"
+    quality="100"
+    placeholder="blurred"
+    alt=""
+    className='img-modal'
+    /> ,
+    ];
+
   return (
     <div>
       <Seo/>
@@ -17,6 +51,10 @@ export default function About() {
       <PageHeader location="O gabinecie"/>
       <section className='about-container'>
         <div className='about-item'>
+        {isModal && <div className='modal' onClick={()=>{setIsModal(false)}}>
+              {galleryImages[isModal-1]}
+                <div className='exit'></div>
+          </div>}
           <div className='about-item__l'>
             <StaticImage
                 src="../images/about/gabinet1.jpg"
@@ -80,6 +118,25 @@ export default function About() {
             />
           </div>
         </div>
+
+        <Carousel
+            className='gallery'
+            showIndicators={false}
+            showThumbs={false}
+            showStatus={false}
+            infiniteLoop={true}
+            
+            swipeable={true}
+            verticalSwipe="natural"
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
+            >
+              {galleryImages.map((item, i)=>{
+                            return <div className='carousel-item' onClick={()=>{setIsModal(i+1)}} key={i}>{item}</div>
+                          })}
+
+            </Carousel>
+
       </section>
       <Statue/>
       <Footer/>

@@ -4,11 +4,14 @@ import NavBar from '../components/Navbar';
 import Topper from '../components/Topper';
 import ContactForm from '../components/ContactForm';
 import PageHeader from '../components/PageHeader';
-import Map from '../components/Map';
 import Seo from '../components/Seo';
 import '../styles/style.scss';
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function MapkaDojazdu() {
+
+  const [isModal, setIsModal] = React.useState(false);
+
   return (
     <div>
       <Seo />
@@ -16,7 +19,28 @@ export default function MapkaDojazdu() {
       <NavBar/>
       <PageHeader location="Kontakt i mapka dojazdu"/>
       <section className='map-container'>
-        <Map/>
+      {isModal && <div className='modal' onClick={()=>{setIsModal(false)}}>
+              <StaticImage
+                          src="../images/mapa.jpg"
+                          quality="100"
+                          placeholder="blurred"
+                          className='map-modal'
+                          alt="widok z lotu ptaka na Wołów, z oznaczeniem lokalizacji i kierunków"
+                          
+                          /> 
+                <div className='exit'></div>
+          </div>}
+          <div onClick={()=>{setIsModal(true); console.log('click')}}>
+          <StaticImage
+                    src="../images/mapa.jpg"
+                    style={{height: `100%`}}
+                    quality="100"
+                    placeholder="blurred"
+                    className='d-block w-100'
+                    alt="widok z lotu ptaka na Wołów, z oznaczeniem lokalizacji i kierunków"
+                    
+                    />
+          </div>
         <div className='map-form'>
           
             <ContactForm className='map-form__l' isLanding={false}/>
