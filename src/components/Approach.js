@@ -13,7 +13,7 @@ export default function Approach() {
                         placeholder="blurred"
                         className='d-block w-100'
                         imgStyle={{ objectPosition: `50% 50%`}}
-                        style={{height: `100%`, objectPosition: `40% 50%`}}
+                        style={{height: `100%`,width: `100%`, objectPosition: `40% 50%`}}
                 />
             </div>
             <div className='approach-item approach__text-r'>
@@ -40,7 +40,7 @@ export default function Approach() {
                         quality="100"
                         placeholder="blurred"
                         className='d-block w-100'
-                        style={{height: `100%`}}
+                        style={{height: `100%`, width: `100%`}}
                 />
             </div>
         </div>

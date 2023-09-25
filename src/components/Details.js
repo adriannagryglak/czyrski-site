@@ -24,7 +24,7 @@ export default function Details() {
                         </li>
                         <li>
                             <span>Środa</span>
-                            <span>12:30 - 18:30</span>
+                            <span>9:00 - 15:30</span>
                         </li>
                         <li>
                             <span>Czwartek</span>
